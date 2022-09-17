@@ -1,0 +1,240 @@
+:root{
+    --clr-primary-200: hsl(225, 100%, 94%);
+    --clr-primary-300: hsla(245, 83%, 68%, 1);
+    --clr-primary-400: hsl(245, 75%, 52%);
+    
+    --clr-neutral-100:hsl(0, 0%, 100%);
+    --clr-neutral-200:hsl(225, 100%, 98%);
+    --clr-neutral-400:  hsl(224, 23%, 55%);
+    --clr-neutral-800:hsl(223, 47%, 23%);
+    --clr-neutral-shadow:#C7D0F0;
+
+    --clr-text-primary: hsl(223, 47%, 23%);
+    --clr-text-secondary: hsl(224, 23%, 55%);
+
+   
+
+    --fw-500: 500;
+    --fw-700:700;
+    --fw-black: 900;
+
+    --fs-heading: 1.75rem;
+    --fs-paragraph:1rem;
+    --fs-subtitle:0.875rem;
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body{
+    background: var(--clr-neutral-200);
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--clr-neutral-400);
+    display: grid;
+    place-items: center;
+}
+
+.wave-pattern{
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--clr-primary-200);
+}
+
+/* I used the CUBE CSS format to style this CSS */
+
+/* Component */
+
+.flow{
+  display: grid;
+  gap: var(--gap, 1em);
+}
+
+.flex-box{
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+
+/* Utility */
+
+.padding-24{
+  padding: 1.5rem;
+}
+
+.padding-48{
+  padding: 3rem;
+}
+
+.text-align-left{
+  text-align: start;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.text-align-right{
+  text-align: end;
+}
+
+.bg-white{
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-grey{
+  background-color: var(--clr-neutral-200);
+}
+
+.text-color-primary{
+  color: var(--clr-text-primary);
+}
+
+.fw-black{
+  font-weight: var(--fw-black);
+}
+
+.border-radius-1{
+  border-radius: 1rem;
+}
+
+.margin-left-auto{
+  margin-left: auto;
+}
+
+.subtle-shadow{
+  box-shadow: var(--clr-neutral-shadow) 0px 15px 50px -7px;
+}
+
+.sleek-shadow{
+  box-shadow:  var(--clr-neutral-shadow) 0px 9px 20px;
+}
+
+/* Block */
+.card{
+  max-width: 450px;
+  overflow: hidden; /*This is to hide the image from overflowing which ruins the border radius*/
+}
+
+
+.text-btn{
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-700);
+  cursor: pointer;
+}
+
+
+
+.btn{
+  padding: 0.8em;
+  border-radius: 1rem;
+  font-weight: var(--fw-700);
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  background-color: transparent;
+}
+
+.text-btn:hover, 
+.text-btn:focus{
+  text-decoration: none;
+  color: var(--clr-primary-300);
+}
+
+
+/* Exception */
+
+.btn[data-button="filled-button"]{
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-400);
+}
+
+.btn[data-button="filled-button"]:hover,
+.btn[data-button="filled-button"]:focus{
+  background-color: var(--clr-primary-300);
+}
+
+.btn[data-button="text-button"]{
+  color: var(--clr-neutral-400);
+  padding: 0;
+}
+
+.btn[data-button="text-button"]:hover{
+  color: var(--clr-text-primary);
+}
