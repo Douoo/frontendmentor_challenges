@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: #F3EAE3;
+}
+
+.body-text{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', 'sans-serif';
+}
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.cart-icon{
+    content: url('../images/icon-cart.svg');
+    background-size:contain;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.card{
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container{
+    display: flex;
+    margin: 100px auto;
+    vertical-align:middle;
+    width: 50%;
+}
+
+.column{
+    position: relative;
+}
+
+.discount-price-tag{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.heading1{
+    font-family: 'Fraunces', 'serif';
+}
+
+
+.highlight-text{
+    color: hsl(158, 36%, 37%);
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: 'Fraunces', serif;
+}
+.primary-button{
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.product-image{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    display:cover;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+
+
+.sub-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:  hsl(228, 12%, 48%);
+}
+
+
+
+@media(max-width:1440px){
+    .container{       
+        width:50%; 
+        min-width: 600px;
+    }
+}
+
+
+
+@media(max-width:675px){
+
+    .card{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .container{
+        width:70%;
+        min-width:400px;
+    }
+    .product-image{
+        content: url('../images/image-product-mobile.jpg');
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+}

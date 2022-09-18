@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Calculator app</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <h1>calc</h1>
+           
+            <div class="radio-group">
+                <h2 class="theme-header">THEME</h2>
+                <div class="label-wrapper">
+                    <label for="dark">1</label>
+                    <label for="light">2</label>
+                    <label for="purple">3</label>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch">
+                        <input data-theme type="radio" name="theme" id="dark" value="dark" checked>
+                        <input data-theme type="radio" name="theme" id="light" value="light">
+                        <input data-theme type="radio" name="theme" id="purple" value="purple">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="output">
+            <div data-previous-operand class="previousOperandTextElement"></div>
+            <div data-current-operand class="currentOperandTextElement"></div>
+        </div>
+        <div class="nested-calculator-grid">
+            <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-delete class="highlight-button">DEL</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-operation>/</button>
+        <button data-operation>x</button>
+        <button data-reset class="span-two highlight-button">RESET</button>
+        <button data-compute class="span-two key-highlight-btn">=</button>
+        </div>
+        
+      
+    </main>
+<!-- 
+    <footer class="footer">
+        <div class="attribution">
+            <span>
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://www.frontendmentor.io/profile/Douoo">Douoo</a>.
+            </span>
+        </div>
+    </footer>
+     -->
+ 
+    
+
+    <script src="theme-script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--main-background);
+    transform: 0.2s;
+}
+
+
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 40%;
+    min-width: 375px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.header{
+    color: var(--body-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header h2{
+    font-size: 18px;
+}
+
+.nested-calculator-grid{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    background-color: var(--keypad-background);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.output{
+    flex-basis: 120px;
+    grid-column: 1/-1;
+    background-color: var(--screen-background);
+    color: var(--body-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 12px;
+    border-radius: 15px;
+    justify-self: center;
+    padding-block: 1.3rem;
+    text-align: right;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.previousOperandTextElement{
+    color: var(--body-text-2-color);
+    font-size: 1.5rem 
+}
+.currentOperandTextElement{
+    font-size:2rem;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+button{
+    cursor: pointer;
+    color: var(--primary-key-color);
+    background-color: var(--primary-key-background);
+    box-shadow: 0 2px 5px outset;
+    outline: none;
+    border-radius: 15px;
+    border:none;
+    font-family: inherit;
+    font-size: 32px;
+    padding: 1rem;
+    background-color:var(--primary-key-background);
+    box-shadow: 0 5px var(--primary-key-shadow);
+}
+
+button:hover{
+    background-color: var(--primary-key-hover);
+}
+
+.highlight-button{
+    background-color: var(--secondary-key-background);
+    color: white;
+    box-shadow: 0 5px var(--secondary-key-shadow);
+}
+
+.highlight-button:hover{
+    background-color: var(--secondary-key-hover);
+}
+
+.key-highlight-btn{
+    background-color: var(--speacial-key-color);
+    box-shadow: 0 5px var(--speacial-key-shadow);
+    color: var(--speacial-key-text-color);
+}
+
+.key-highlight-btn:hover{    
+    background-color: var(--speacial-key-hover);
+}
+
+.header{
+    display: flex;
+    align-items:center;
+    margin-bottom: 1rem;
+}
+
+
+.header h1{
+    margin-bottom: 0;
+}
+
+.header h2{
+    padding-right: 0.2rem;
+}
+
+.radio-group{
+    display: grid;
+    grid-template-columns: 1fr 4.5rem;
+    grid-template-areas: ". labels" "title switch";
+}
+
+.radio-group h2{
+    margin-bottom: 0;
+    grid-row: span 2;
+    font-size:12px; 
+    align-self: flex-end;
+    padding-right: 1.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.label-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.theme-switch-wrapper{
+    background-color: var(--keypad-background);
+    border-radius: 15px;
+    padding: 4px;
+    display:inline-block;
+}
+
+.theme-switch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+}
+
+.theme-switch input[type=radio]{
+    width: 0.8rem;
+    height:0.8rem;
+    border-radius:50%;
+    outline: none;
+    appearance: none;
+    cursor:pointer;
+    margin: auto 0;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.theme-switch-wrapper input[type=radio]:checked{
+    background-color: var(--speacial-key-color);
+}
+
+
+.footer{
+    display: block;
+    width: 100%;
+    text-align: center; 
+    color: var(--body-text-color);
+}
+
+.attribution { 
+    margin: 2rem auto;
+    padding: 16px 0 8px;
+    font-size: 14px; 
+    display: inline;
+    align-items: center;
+}
+.attribution a { 
+    color:var(--body-text-color);
+}
+
+[data-theme=dark]{
+    --main-background: hsl(222, 26%, 31%);
+    --keypad-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+
+    --secondary-key-background: hsl(225, 21%, 49%);
+    --secondary-key-hover:#A2B3E1;
+    --secondary-key-shadow: hsl(224, 28%, 35%);
+
+    --primary-key-background: hsl(30, 25%, 89%);
+    --primary-key-shadow: hsl(28, 16%, 65%);
+    
+    --primary-key-hover:#fff;
+
+    --speacial-key-color: hsl(6, 63%, 50%);
+    --speacial-key-shadow:  hsl(6, 70%, 34%);
+    --speacial-key-hover:#F96C5B; 
+    --speacial-key-text-color: white;
+     
+    --primary-key-color: hsl(221, 14%, 31%);
+    --body-text-color: white;
+    --body-text-2-color:rgba(255,255,255,0.75);
+}
+
+[data-theme=light]{
+    --main-background: hsl(0, 0%, 90%);
+    --keypad-background: 
+    hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%)
+    ;
+
+    --secondary-key-background: hsl(185, 42%, 37%);
+    --secondary-key-hover:#62B5BD;
+    --secondary-key-shadow:  hsl(185, 58%, 25%)
+    ;
+
+    --primary-key-background: hsl(45, 7%, 89%);
+    --primary-key-shadow: hsl(28, 16%, 65%);
+    
+    --primary-key-hover:#fff;
+
+    --speacial-key-color: hsl(25, 98%, 40%);
+    --speacial-key-shadow:  hsl(25, 99%, 27%);
+    --speacial-key-hover:#FF8B38;
+    --speacial-key-text-color: white;
+
+    --primary-key-color: hsl(60, 10%, 19%);
+    --body-text-color: hsl(60, 10%, 19%);
+    --body-text-2-color: hsl(60, 3%, 45%);
+}
+
+[data-theme=purple]{
+        --main-background:  hsl(268, 75%, 9%);
+        --keypad-background: hsl(268, 71%, 12%);
+        --screen-background: hsl(268, 71%, 12%);
+    
+        --secondary-key-background: hsl(281, 89%, 26%) ;
+        --secondary-key-hover:#8631B0;
+        --secondary-key-shadow:  hsl(285, 91%, 52%);
+    
+        --primary-key-background: hsl(268, 47%, 21%);
+        --primary-key-shadow: hsl(285, 91%, 52%);
+        --primary-key-hover:#6B34AC;
+    
+        --speacial-key-color: hsl(176, 100%, 44%);
+        --speacial-key-shadow:  hsl(177, 92%, 70%);
+        --speacial-key-hover:#94FFF9; 
+        --speacial-key-text-color: black;
+         
+        --primary-key-color:  hsl(52, 100%, 62%);
+        --body-text-color:  hsl(52, 100%, 62%);
+        --body-text-2-color:hsla(52, 66%,63%, 0.822);
+    
+}
