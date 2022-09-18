@@ -54,7 +54,7 @@ I practiced my CUBE css skill with this project. I kept my styling clean, modula
 
 ### Useful resources
 
-- [CUBE CSS Documentation](https://www.example.com) - This helped me understand what CUBE is really about. It gave understanding on how I could keep my css organized in the form of composition, utility, block and exception.
+- [CUBE CSS Documentation](https://www.cube.fyi) - This helped me understand what CUBE is really about. It gave understanding on how I could keep my css organized in the form of composition, utility, block and exception.
 
 
 ## Author
