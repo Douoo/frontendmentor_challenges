@@ -107,6 +107,9 @@ body{
     display: grid;
     place-items: center;
 }
+main{
+    margin: 1rem;
+}
 
 .wave-pattern{
   background-image: url("../images/pattern-background-desktop.svg");
