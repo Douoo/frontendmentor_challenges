@@ -101,6 +101,7 @@ body{
 
 h1{
     font-size: var(--fs-body-text);
+
 }
 
 p{
@@ -144,6 +145,11 @@ p{
 .text-align-center{
     text-align: center;
 }
+
+.text-primary{
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-200);
+} 
 
 .text-light-grey{
     font-weight: var(--fw-400);
