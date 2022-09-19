@@ -191,13 +191,17 @@ p{
 }
 
 .position-top-right{
-    left: -30%;
-    top: -35%;
+  position: absolute;
+
+    left: -310px;
+    top: -504px;
 }
 
 .position-bottom-left{
-    right: -25%;
-    bottom: -55%;
+  position: absolute;
+
+    right: -235px;
+    bottom: -678px;
 }
 
 
@@ -216,12 +220,12 @@ p{
 
 @media(max-width:756px){
   .position-top-right{
-    left: -90%;
-    top: -80%;
+    left: -400px;
+    top: -300px;
 }
 
 .position-bottom-left{
-    right: -90%;
-    bottom: -80%;
+    right: -400px;
+    bottom: -300px;
 }
 }
