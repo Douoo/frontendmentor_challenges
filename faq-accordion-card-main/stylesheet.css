@@ -177,6 +177,28 @@ body{
 }
 
 
+.faq[open] .question::after{
+    content: url('./images/icon-arrow-down.svg');
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+footer{
+    display: block;
+    padding-bottom: 1rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color:var(--clr-white);
+  }
+
+  .attribution a {
+    font-weight: var(--fw-bold); 
+    color:var(--clr-white);
+  }
+
+
 
 @media(min-width: 1010px){
 
