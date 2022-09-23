@@ -1,0 +1,248 @@
+:root {
+    --clr-dark-blue: hsl(238, 29%, 16%);
+    --clr-red-soft: hsl(14, 88%, 65%);
+    --clr-violet-soft: hsl(273, 75%, 66%);
+    --clr-blue-soft: hsl(240, 73%, 65%);
+    --clr-grey-800: hsl(237, 12%, 33%);
+    --clr-grey-400: hsl(240, 6%, 50%);
+    --clr-grey-100: hsl(240, 5%, 91%);
+    --clr-white: hsl(0, 0%, 100%);
+    --fs-body: 12px;
+    --fs-question: 13px;
+    --fs-title: 32px;
+    --fw-bold: 700;
+    --fw-regular:400;
+    --pad-hor: 0.75rem;
+    --pad-ver: 3rem;
+    --ff-primary: "Kumbh Sans", sans-serif;
+  }
+  
+  
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+p{
+    line-height: 1.45;
+}
+
+summary, details{
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-grey-800);
+    background: linear-gradient(180deg, var(--clr-violet-soft), 50%, var(--clr-blue-soft));
+}
+
+/* Typography */
+.content-title{
+    color: var(--clr-dark-blue);
+    font-size: var(--fs-title);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+.question{
+    font-size: var(--fs-question);
+}
+
+.question:hover, .answer:focus{
+    color: var(--clr-red-soft);
+}
+
+
+.faq[open] .question{
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-bold);
+}
+
+.container,
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    flex: 1;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.card>*,
+.faq-content>*{
+    width: 100%;
+}
+
+.card{
+    background-color: var(--clr-white);
+    border-radius: 2rem;
+    padding: 34px 0 50px;
+    height: 100%;
+    row-gap: 3rem;
+    box-shadow: 0 10px 40px hsl(257, 35%, 47%);;
+}
+
+
+.card-image{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -142px;
+    background-color: transparent;
+}
+
+.image-container,
+.image-shadow-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    position: absolute;
+    content: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 196px;
+    width: 266px;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+}
+
+.image-shadow{
+    position: absolute;
+    content: url(images/bg-pattern-mobile.svg);    
+    left: 45px;
+    top: 25px;
+    height: 104px;
+    width: 240px;
+    z-index: 0;
+}
+
+
+.question{
+    position: relative;
+    cursor: pointer;
+}
+
+.question::after{
+    content: url(images/icon-arrow-down.svg);
+    position: absolute;
+    right: 0;
+}
+
+.card-content{
+    width: 327px;
+    padding: 0 24px;
+}
+
+
+
+.faq{    
+    text-align: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--clr-grey-100);
+}
+
+.faq[open] .question{
+    margin-bottom: 12px;
+}
+
+
+
+@media(min-width: 1010px){
+
+    .content-title{
+        text-align: start;
+    }
+    .container{
+        width: min(100%, 920px);
+        justify-content: center;
+    }
+
+    .card{
+        width: inherit;
+        flex-direction: row;
+        padding: 0;
+        min-height: 510px;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .card::before{
+        position: absolute;
+        content: url("./images/illustration-box-desktop.svg");
+        left: 0;
+        transform: translate(-35%, 25%);
+        z-index: 5;
+    }
+
+    .card>*{
+        width: 50%;
+    }
+
+    .card-image{
+        position: absolute;
+        overflow: hidden;
+        min-height: 510px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        border-radius: 2em 0 0 2em;
+        transform: translate(-50%, 14%);
+    }
+
+    .image{
+        content: url('./images/illustration-woman-online-desktop.svg');
+        height: 359px;
+        width: 472px;
+        left: 0;
+        top: 0;
+        transform: translate(-15%, 20%);
+        z-index: 2;
+    }
+
+    .image-shadow{
+        content: url('./images/bg-pattern-desktop.svg');
+        height: 945px;
+        width: 966px;
+        z-index: 15;
+        left: 0;
+        top: 0;
+        transform: translate(-58.5%, -58%);
+        z-index: 0;
+    }
+
+    .card-content{
+        margin-left: auto;
+        padding: 2rem 4rem 2rem 0;
+    }
+}
