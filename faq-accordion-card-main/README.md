@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor-challenges/faq-accordion-card-main)
-- Solution URL: [Source code](https://github.com/douoo/frontendmentor-challenges/faq-accordion-card-main)
+- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor_challenges/faq-accordion-card-main/)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/faq-accordion-card-main)
 ## My process
 
 ### Built with

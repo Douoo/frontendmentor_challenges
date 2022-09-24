@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Src code](https://github.com/douoo/frontendmentor-challenges/social-proof-section-master)
+- Solution URL: [Src code](https://github.com/Douoo/frontendmentor_challenges/tree/main/social-proof-section-master)
 - Live Site URL: [Live URL Demo](https://douoo.github.io/frontendmentor_challenges/social-proof-section-master)
 
 ## My process
