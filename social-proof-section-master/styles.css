@@ -1,0 +1,328 @@
+:root{
+    --clr-primary-magenta:  hsl(300, 43%, 22%);
+    --clr-primary-pink:hsl(333, 80%, 67%);
+    --clr-gray-magneta:hsl(303, 10%, 53%);
+    --clr-lightgray-magneta: hsl(300, 24%, 96%);
+    --clr-white: hsl(0, 0%, 100%);
+    --fs-body: 16px;
+    --fs-body-2: 18px;
+    --fw-regular: 400;
+    --fw-500:500;
+    --fw-bold: 700;
+    --ff-primary:'League Spartan', sans-serif;
+}
+
+*, *::before *::after{
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4, 
+p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p{    
+    line-height: 1.5;
+}
+
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: var(--ff-primary);
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-primary-magenta);
+}
+
+.container{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 1110px;
+    margin: 5rem auto 4rem;
+}
+
+/* Typography */
+.headline{
+    font-size: 4rem;
+}
+
+.lead-content{
+    font-size: var(--fs-body-2);
+}
+
+.body-text-2{
+    font-size: var(--fs-body-2);
+    font-weight: var(--fw-bold);
+}
+
+.customer-name,
+.testimony{
+    font-size: var(--fs-body-2);
+    /* color: var(--clr-white); */
+}
+
+.label{
+    font-size: var(--fs-body);
+    color: var(--clr-primary-pink);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Layout structure */
+.product-rating-overview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0;
+    margin: auto;
+    text-align: center;
+}
+
+.product-description{
+    margin: 3rem 1.5rem;
+
+}
+
+.headline{
+    margin-bottom: 1.5rem;
+}
+
+.product-rating{
+    width: 50%;
+    margin: auto;
+}
+
+.product-rating{
+    width: 100%;
+    display: block;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+}
+
+.rating{
+    background-color: var(--clr-lightgray-magneta);
+    margin: 0 0.75rem 1rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 20rem);
+    margin: 1rem auto;
+}
+
+
+
+.star{
+    display: inline-block;
+    width: 100%;
+    background-image: url(./images/icon-star.svg);
+    background-repeat: repeat-x;
+    height: 16px;
+    width: 17px;
+    margin-right: 0.5rem;
+
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.card{
+    background-color: var(--clr-primary-magenta);
+    color: var(--clr-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: min(100%, 16rem);
+    margin: 1rem auto;
+}
+
+.card-header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.circular-avatar{
+    border-radius: 50%;
+}
+
+footer{
+    font-size: var(--fs-body)-2;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.attribution {
+    text-align: center;
+  }
+
+  .attribution a {
+    color: var(--clr-gray-magneta);
+  }
+
+@media(max-width:1067px){
+    .testimonials{
+        padding: 5rem 2rem;
+    }
+}
+
+@media(min-width:700px){
+    .product-description{
+        width: 40%;
+    }
+    .product-rating-overview{
+       flex-direction: row;
+    }
+
+    .headline{
+        text-align: start;
+    }
+
+    .lead-content{
+        text-align: start;
+    }
+
+    .product-rating{
+        
+       width: 649px;
+    }
+
+    .rating{
+        flex-direction: row;
+        width: 445px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .rating:nth-child(1){
+        margin-left: 1rem;
+    }
+
+    .rating:nth-child(2){
+        margin-left: 4em;
+        margin-top: 1em;
+    }
+
+    .rating:nth-child(3){
+        margin-left: 6em;
+        margin-top: 2em;
+    }
+
+    .card{
+        margin-right: 1rem 2rem;
+    }
+
+    .card:nth-child(1){
+        margin-top: 1em;
+        margin-right: 2rem;
+    }
+   
+    .card:nth-child(2){
+        margin-top:2em;
+        margin-right: 2rem;
+        margin-bottom: -1em;
+    }
+   
+    .card:nth-child(3){
+        margin-top: 3em;
+        margin-right: 0;
+        margin-bottom: -2em;
+
+    }
+    
+
+    .testimonials{
+        flex-direction: row;
+    }
+
+    .testimonials :not(:last-child()){
+        border: 1px solid purple;
+        margin-right: 24px;
+    }
+}
+
+
+/* 
+.product-rating-overview{
+    flex-direction: row;
+ }
+
+ .headline{
+     text-align: start;
+ }
+
+ .lead-content{
+     text-align: start;
+ }
+
+ .product-rating{
+     
+    width: 649px;
+ }
+
+ .rating{
+     flex-direction: row;
+     width: 445px;
+     justify-content: space-around;
+     align-items: flex-start;
+ }
+ .rating:nth-child(1){
+     margin-left: 1rem;
+ }
+
+ .rating:nth-child(2){
+     margin-left: 4em;
+     margin-top: 1em;
+ }
+
+ .rating:nth-child(3){
+     margin-left: 6em;
+     margin-top: 2em;
+ }
+
+ .card{
+     height: 235px; I did this only for design purpose and based on assumptions. Its not recommended to give a layout a fixed width.
+ } */
+
+ /* .card:nth-child(1){
+     margin-top: 1em;
+     margin-right: 2rem;
+ }
+
+ .card:nth-child(2){
+     margin-top:2em;
+     margin-right: 2rem;
+ }
+
+ .card:nth-child(3){
+     margin-top: 3em;
+ }
+ 
+
+ .testimonials{
+     flex-direction: row;
+ } */

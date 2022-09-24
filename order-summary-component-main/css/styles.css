@@ -131,6 +131,10 @@ main{
   gap: var(--gap, 1em);
 }
 
+.align-items-center{  
+  align-items: center;
+}
+
 
 /* Utility */
 
@@ -240,4 +244,11 @@ main{
 
 .btn[data-button="text-button"]:hover{
   color: var(--clr-text-primary);
+}
+
+
+@media(max-width: 500px){
+  .padding-48{
+    padding: 1.25rem;
+  }
 }
