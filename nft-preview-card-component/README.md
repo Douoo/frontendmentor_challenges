@@ -34,8 +34,8 @@ The challenge was to build an nft-preview-card-component and make it look simila
 ![](challenge-web_preview_screenshot.png)
 ### Links
 
-- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor-challenges/nft-preview-card-component-main)
-- Solution URL: [Source code](https://github.com/douoo/frontendmentor-challenges/nft-preview-card-component-main)
+- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor_challenges/nft-preview-card-component/)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/nft-preview-card-component)
 
 ## My process
 

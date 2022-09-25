@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live Web Demo](https://douoo.github.io/frontendmentor-challenges/order-summary-component-main)
-- Live Site URL: [Src code](https://github.com/douoo/frontendmentor-challenges/order-summary-component-main)
+- Live URL: [Live Web Demo](https://douoo.github.io/frontendmentor_challenges/order-summary-component-main)
+- Solution URL: [Src code](https://github.com/Douoo/frontendmentor_challenges/tree/main/order-summary-component-main)
 
 ## My process
 

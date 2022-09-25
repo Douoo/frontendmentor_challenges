@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live Web Demo](https://douoo.github.io/frontendmentor-challenges/stats-preview-car-component-main)
-- Live Site URL: [Src code](https://github.com/douoo/frontendmentor-challenges/stats-preview-car-component-main)
+- Solution URL: [src code](https://github.com/Douoo/frontendmentor_challenges/tree/main/stats-preview-card-component-main)
+- Live Site URL: [Demo](https://douoo.github.io/frontendmentor_challenges/stats-preview-card-component-main/)
 
 ## My process
 

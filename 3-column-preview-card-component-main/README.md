@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Src code](https://github.com/douoo/frontendmentor-challenges/3-column-preview-card-component-main)
+- Solution URL: [Src code](https://github.com/Douoo/frontendmentor_challenges/tree/main/3-column-preview-card-component-main)
 - Live Site URL: [Live URL Demo](https://douoo.github.io/frontendmentor_challenges/3-column-preview-card-component-main)
 
 ## My process

@@ -41,8 +41,8 @@ Here are the previews(screenshots) of the themes.
 ### Links
 
 
-- Live Site URL visit: [Test it LIVE](https://douoo.github.io/calculator-app)
-- SRC code: [Check the code](https://github.com/Douoo/calculator-app)
+- Live Site URL visit: [Test it LIVE](https://douoo.github.io/frontendmentor_challenges/calculator-app)
+- SRC code: [Check the code](https://github.com/Douoo/frontendmentor_challenges/tree/main/calculator-app)
 
 ## My process
 

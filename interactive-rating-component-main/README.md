@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/douoo/interactive-rating-component)
-- Live Site URL: [Live Preview](https://douoo.github.io/interactive-rating-component/)
+- Solution URL: [Code](https://github.com/Douoo/frontendmentor_challenges/tree/main/interactive-rating-component-main)
+- Live Site URL: [Live Preview](https://douoo.github.io/frontendmentor_challenges/interactive-rating-component-main/)
 
 
 ## Built with

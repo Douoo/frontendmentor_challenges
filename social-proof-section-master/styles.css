@@ -191,7 +191,7 @@ footer{
     }
 }
 
-@media(min-width:700px){
+@media(min-width:880px){
     .product-description{
         width: 40%;
     }
@@ -264,65 +264,3 @@ footer{
         margin-right: 24px;
     }
 }
-
-
-/* 
-.product-rating-overview{
-    flex-direction: row;
- }
-
- .headline{
-     text-align: start;
- }
-
- .lead-content{
-     text-align: start;
- }
-
- .product-rating{
-     
-    width: 649px;
- }
-
- .rating{
-     flex-direction: row;
-     width: 445px;
-     justify-content: space-around;
-     align-items: flex-start;
- }
- .rating:nth-child(1){
-     margin-left: 1rem;
- }
-
- .rating:nth-child(2){
-     margin-left: 4em;
-     margin-top: 1em;
- }
-
- .rating:nth-child(3){
-     margin-left: 6em;
-     margin-top: 2em;
- }
-
- .card{
-     height: 235px; I did this only for design purpose and based on assumptions. Its not recommended to give a layout a fixed width.
- } */
-
- /* .card:nth-child(1){
-     margin-top: 1em;
-     margin-right: 2rem;
- }
-
- .card:nth-child(2){
-     margin-top:2em;
-     margin-right: 2rem;
- }
-
- .card:nth-child(3){
-     margin-top: 3em;
- }
- 
-
- .testimonials{
-     flex-direction: row;
- } */

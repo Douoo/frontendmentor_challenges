@@ -35,7 +35,7 @@ img{
 body{
     min-height: 100vh;
     font-family: var(--ff-primary);
-    background-color: var(--clr-grey-500);
+    background-color: var(--clr-grey-300);
     display: flex;
     flex-direction: column;
     color: var(--clr-grey-600);
@@ -94,7 +94,7 @@ body{
     background-color: var(--clr-white);
     overflow: hidden;
     border-radius: 0 0 0.75rem 0.75rem;
-    box-shadow: 0px 0px 40px var(--clr-grey-500);
+    box-shadow: 0px 0px 20px var(--clr-grey-500);
 }
 
 .text>*{
@@ -174,7 +174,10 @@ div.toggle{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--clr-grey-300);
+    text-decoration: none;
 }
+
 
 
 .share-cta:hover,

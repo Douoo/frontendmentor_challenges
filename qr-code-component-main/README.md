@@ -21,8 +21,8 @@ Overview
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Douoo/qr-code-component.git)
-- Live Site URL: [Preview](https://douoo.github.io/qr-code-component)
+- Solution URL: [Code](https://github.com/Douoo/frontendmentor_challenges/tree/main/qr-code-component-main)
+- Live Site URL: [Preview](https://douoo.github.io/frontendmentor_challenges/qr-code-component-main)
 
 ## My process
 
