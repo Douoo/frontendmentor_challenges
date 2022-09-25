@@ -107,6 +107,10 @@ body{
     /* padding: 36px 42px 20px; */
 }
 
+.card-footer{
+    padding: 42px 32px 20px;
+}
+
 .content-footer{
     display: flex;
     justify-content: space-between;
@@ -163,7 +167,7 @@ div.toggle{
     position: absolute;
     height: 32px;
     width: 32px;
-    top: 50%;
+    bottom: 20px;
     right: 2rem;
     z-index: 15;
     border-radius: 50%;
@@ -233,7 +237,8 @@ footer{
     overflow: visible;
 }
 
-.container{
+.card-footer{
+    padding: 0 32px 20px;
     position: relative;
 }
 
