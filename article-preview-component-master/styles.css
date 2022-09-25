@@ -1,0 +1,260 @@
+:root{
+    --clr-grey-700:hsl(217, 19%, 35%);
+    --clr-grey-600: hsl(214, 17%, 51%);
+    --clr-grey-500:hsl(212, 23%, 69%);
+    --clr-grey-300:hsl(210, 46%, 95%);
+    --clr-white: hsl(0, 0%,100%);
+    --fs-title: 18px;
+    --fs-body: 13px;
+    --ff-primary: 'Manrope', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --default-padding:2rem;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-grey-500);
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-grey-600);
+}
+
+/* Typography */
+.title{
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    color: var(--clr-grey-700);
+}
+
+.body-text{
+    font-size: var(--fs-body);
+}
+
+.subtitle{
+    font-size: var(--fs-body);
+    color: var(--clr-grey-700);
+}
+
+.text-cta{
+    color: var(--clr-grey-500);
+    letter-spacing: 2px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Structure */
+
+.component{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 375px;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-content{
+    background-color: var(--clr-white);
+    overflow: hidden;
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 0px 0px 40px var(--clr-grey-500);
+}
+
+.text>*{
+    margin-bottom: 24px;
+}
+
+.container{
+    padding: 42px 32px 20px;
+    position: relative;
+    /* padding: 36px 42px 20px; */
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-creator{
+    display: flex;
+    align-items: center;
+}
+
+.circular-avatar{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+/* Margin right 10px */
+.mr-10{
+    margin-right: 10px;
+}
+
+.push-right{
+    margin-left: auto;
+}
+
+.social-share-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-btns{
+    display: flex;
+    align-items: center;
+}
+.social-btns>*{
+    margin: 0 10px;
+}
+
+
+.toggle{
+    width: 100%;
+    height: 60px;
+}
+
+div.toggle{
+    background-color: var(--clr-grey-700);
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 0;
+    padding: 10px 10px 16px;
+}
+
+.share-cta{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+    right: 2rem;
+    z-index: 15;
+    border-radius: 50%;
+    border: none;
+    fill: #6E8098;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.share-cta:hover,
+.share-cta:focus{
+    fill: var(--clr-white);
+    background-color: var(--clr-grey-500);
+}
+.share-btn:hover{
+    opacity: 0.6;
+}
+
+/* Hides the toggler */
+.hidden{
+    display: none
+}
+
+
+footer{
+    display: block;
+    padding-top: 15px;
+}
+@media(min-width: 754px){
+    .card{
+        flex-direction: row;
+        min-height: 285px;
+        max-width: 735px;
+    }
+
+    .card-image{
+        margin-right: 0;
+        /* height: 285px; */
+        object-fit: cover;
+    border-radius: 0.75rem 0 0  0.75rem;
+
+    }
+
+    .card-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-content{
+        border-radius: 0  0.75rem   0.75rem 0;
+    }
+
+    
+.toggle{
+    width: 275px;
+    height: 60px;
+}
+
+.card-content{
+    overflow: visible;
+}
+
+.container{
+    position: relative;
+}
+
+div.toggle{
+    border-radius: 12px;
+    position: absolute;
+    left: 170px;
+    bottom: 80px;    
+    box-shadow: 0px 0px 10px var(--clr-grey-500);
+    transition: ease 0.1s;
+}
+
+.toggle::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0.8rem solid transparent;
+    position: absolute;
+}
+
+.toggle.toggle-bottom::before{
+    bottom: -24px;
+    right: 18%;
+    border-top: 1rem solid var(--clr-grey-700);
+}
+
+}
