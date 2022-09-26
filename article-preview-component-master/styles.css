@@ -2,6 +2,7 @@
     --clr-grey-700:hsl(217, 19%, 35%);
     --clr-grey-600: hsl(214, 17%, 51%);
     --clr-grey-500:hsl(212, 23%, 69%);
+    --clr-shadow: hsl(213, 13%, 84%);
     --clr-grey-300:hsl(210, 46%, 95%);
     --clr-white: hsl(0, 0%,100%);
     --fs-title: 18px;
@@ -81,6 +82,7 @@ body{
     flex-direction: column;
     position: relative;
     max-width: 375px;
+    box-shadow: 0px 20px 50px var(--clr-shadow);
 }
 
 .card-image{
@@ -94,7 +96,6 @@ body{
     background-color: var(--clr-white);
     overflow: hidden;
     border-radius: 0 0 0.75rem 0.75rem;
-    box-shadow: 0px 0px 20px var(--clr-grey-500);
 }
 
 .text>*{
@@ -179,7 +180,6 @@ div.toggle{
     align-items: center;
     justify-content: center;
     background-color: var(--clr-grey-300);
-    text-decoration: none;
     font-size: 0;
 }
 
@@ -246,9 +246,9 @@ footer{
 div.toggle{
     border-radius: 12px;
     position: absolute;
-    left: 170px;
+    left: 180px;
     bottom: 80px;    
-    box-shadow: 0px 0px 10px var(--clr-grey-500);
+    box-shadow: 0px 20px 50px var(--clr-grey-500);
     transition: ease 0.1s;
 }
 
