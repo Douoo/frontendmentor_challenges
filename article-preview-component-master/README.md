@@ -34,9 +34,8 @@ Users should be able to:
 ![Web view](web_view.png)
 
 ### Links
-- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor-challenges/article-preview-component-master)
-- Solution URL: [Source code](https://github.com/douoo/frontendmentor-challenges/article-preview-component-master)
-
+- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor_challenges/article-preview-component-master/)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/article-preview-component-master)
 ## My process
 
 ### Built with
