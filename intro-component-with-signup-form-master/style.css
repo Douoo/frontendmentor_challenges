@@ -79,7 +79,7 @@ body{
 /* Typography */
 
 .cta__title{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .cta__text{
@@ -102,7 +102,9 @@ body{
     text-align: center;
 }
 
-
+.text-bold{
+    font-weight:var(--fw-600);
+}
 /* Layout setup */
 
 .grid-wrapper{
