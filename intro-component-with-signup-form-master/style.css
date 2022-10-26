@@ -1,0 +1,296 @@
+:root{
+    --clr-primary-red:hsl(0, 100%, 74%) ;
+    --clr-primary-green:hsl(154, 59%, 51%);
+
+    --clr-accent-blue:hsl(248, 32%, 49%);
+    --clr-black-red:hsla(0, 50%, 58%, 0.589);
+
+    --clr-neutral-800:hsl(249, 10%, 26%);
+    --clr-neutral-300:hsl(246, 25%, 77%);
+    --clr-white:#fff;
+    --fs-body:16px;
+    --ff-primary:'Poppins', sans-serif;
+    --fw-400:400;
+    --fw-500:500;
+    --fw-600:600;
+    --fw-700:700;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+dd,
+dl,
+body{
+    margin: 0;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+img, picture{
+    display: block;
+    max-width:100%;
+}
+
+ul[role='list'],
+ol[role='list']{
+    list-style: none;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+input, button, select, textarea{
+    font: inherit;
+}
+
+@media(prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration:0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body{
+    min-height:100vh;
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: var(--clr-primary-red);
+    background-blend-mode: normal;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+/* Typography */
+
+.cta__title{
+    font-size: 2.5rem;
+}
+
+.cta__text{
+    font-size:16px;
+}
+
+.error-text{
+    color: var(--clr-primary-red);
+    font-style: italic;
+    text-align: end;
+}
+
+.banner__text{
+    font-size: var(--fs-body);
+    text-align: center;
+}
+
+.submit__title, .submit__text{
+    color: var(--clr-neutral-800);
+    text-align: center;
+}
+
+
+/* Layout setup */
+
+.grid-wrapper{
+    display: grid;
+    grid-template-areas: 'one''two''three''four';
+}
+
+.cta{
+    grid-area: one;
+}
+
+.banner{
+    grid-area: two;
+}
+
+.signup-form{
+    grid-area:three;
+}
+
+.footer{
+    grid-area:four;
+}
+
+
+.cta{
+    text-align: center;
+    margin: 5.9375rem 0 4.375rem;
+}
+
+
+.banner{
+    background-color: var(--clr-accent-blue);
+    border-radius: 10px;
+    box-shadow: 0px 7px 1px var(--clr-black-red);
+    padding: 15px 16px 17px;
+    margin-bottom: 1rem;
+}
+
+.banner__text{
+    width:100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup-term, .attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.signup-term {
+    color: var(--clr-neutral-300);
+  }
+
+.signup-term a, .attribution a{    
+    font-weight: var(--fw-600);
+}
+
+.signup-term a {
+    color: var(--clr-primary-red);
+    text-decoration: none;
+}
+
+
+.attribution{
+    color: var(--clr-neutral-800);
+}
+
+.attribution a{
+    color:var(--clr-accent-blue);
+}
+
+/* Layout */
+.container{
+    width: min(85%, 1120px);
+    margin: 0 auto;
+}
+
+
+/* Signup Form styling  */
+.signup-form{
+    background-color: var(--clr-white);
+    padding:1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 1px var(--clr-black-red);
+    margin-bottom: 1rem;
+}
+
+.form-control, .btn{
+    margin-bottom: 1rem;
+}
+
+.form-control{
+    position: relative;
+}
+.form-control input{
+    width: 100%;
+    display: block;
+    height: 55px;
+    font-weight: var(--fw-600);
+    border: 0.5px solid var(--clr-neutral-300);
+    border-radius: 5px;
+    padding-left:1.75rem;
+}
+
+.form-control input:focus{    
+    outline: none !important;
+    border-color: black;
+}
+
+.form>div>label{
+    display: none;
+}
+
+/* Form Error Handling */
+
+.form-control.error input{
+    border-color: var(--clr-primary-red);
+    border: 2px solid var(--clr-primary-red);
+}
+
+.form-control small{
+    width:100%;
+    display: block;
+    text-align: end;
+    font-weight: var(--fw-500);
+    display: none;
+}
+
+.form-control .error-icon{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    display: inline-block;
+}
+
+.form-control.error .error-icon{
+    visibility: visible;
+}
+
+
+/* Primary Button Style */
+
+.btn{
+    display:block;
+    width:100%;
+    font-weight:var(--fw-600);
+    color: var(--clr-white);
+    background-color: var(--clr-primary-green);
+    border: none;
+    border-radius: 5px;
+    height:50px;
+    box-shadow: 0px 5px 1px #32B97F;
+    word-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus{
+    background-color: #77E2B4;
+    box-shadow: 0px 5px 1px #76C8A4;
+}
+
+
+.footer{
+    display: block;
+    height: 100%;
+    width: 100%;
+    justify-self: flex-end;
+}
+
+  @media(min-width:600px){
+
+    .cta__title, .cta__text{
+        text-align: start;
+    }
+
+    .cta{
+        padding: 0 5rem 0 0 ;
+        align-self: center;
+    }
+    .grid-wrapper{
+        grid-template-columns: 1.25fr 1fr;
+        /* grid-template: 1.75fr 2.5fr; */
+        grid-template-areas: 'one two' 'one three''four four';
+        gap:1rem;
+    }
+  }

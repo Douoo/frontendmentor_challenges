@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <main class="container grid-wrapper">
+    <div class="cta col">
+      <h1 class="cta__title">Learn to code by watching others</h1>
+      <p class="cta__text"> See how experienced developers solve problems in real-time. Watching scripted tutorials is
+        great,
+        but understanding how developers think is invaluable. </p>
+    </div>
+      <div class="banner">
+        <p class="banner__text">
+          Try it free 7 days then $20/mo. thereafter</p>
+      </div>
+      <div class="signup-form">
+        <form action="" class="form" id="form">
+          <div class="form-control">
+            <input type="text" placeholder="First Name" name="firstname" id="first-name" minlength="2" required>
+            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <label for="fristname">First Name</label>
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Last Name" name="lastname" id="last-name" min-length="2" required>
+            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <label for="lastname">Last Name</label>
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Email Address" name="name" id="email" minlength="8" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required>
+            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <label for="email">Email Address</label>
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="Password" name="password" id="password" minlength="8" required>
+            <svg class="error-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+            <label for="password">Password</label>
+            <small class="error-text"></small>
+          </div>
+          <button type="submit" class="btn">Claim your free trial </button>
+  
+          <p class="signup-term">By clicking the button, you are agreeing to our <a href="#" target="_blank">Terms and
+              Services </a>.
+          </p>
+        </form>
+      </div>
+      
+  </main>
+
+
+
+
+
+
+
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Douoo</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
