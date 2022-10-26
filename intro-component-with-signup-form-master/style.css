@@ -289,6 +289,11 @@ body{
         padding: 0 5rem 0 0 ;
         align-self: center;
     }
+
+    .banner, .signup-form{
+        align-self: flex-start;
+    }
+
     .grid-wrapper{
         grid-template-columns: 1.25fr 1fr;
         /* grid-template: 1.75fr 2.5fr; */
