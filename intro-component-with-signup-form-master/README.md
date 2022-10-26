@@ -10,6 +10,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Continued development](#continued-development)
 - [Author](#author)
 
 
@@ -46,7 +47,8 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-
+## Continued development
+There are lots of form validation techniques out there, some of the built in and someother we could just do with custom JS methods but I feel like I need to do more research on how standard form validations are done.
 
 ## Author
 
