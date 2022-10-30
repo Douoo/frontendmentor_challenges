@@ -76,6 +76,7 @@ body{
 
 .text-subtitle{
     font-size: var(--fs-subtitle);
+    font-weight: var(--fw-700);
 }
 
 .text-yellow{
