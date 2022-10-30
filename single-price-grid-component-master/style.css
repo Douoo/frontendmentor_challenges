@@ -73,10 +73,12 @@ body{
     line-height:3;
 }
 
+.text-subtitle, .text-large{
+    font-weight: var(--fw-700)
+}
 
 .text-subtitle{
     font-size: var(--fs-subtitle);
-    font-weight: var(--fw-700);
 }
 
 .text-yellow{
@@ -93,6 +95,7 @@ body{
 
 .text-fade{
     opacity: 0.6;
+    font-weight: var(--fw-400)
 }
 
 .text-bold{
