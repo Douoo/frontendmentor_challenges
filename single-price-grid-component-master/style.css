@@ -88,7 +88,7 @@ body{
 }
 
 .text-large{
-    font-size:1.5rem;
+    font-size:2rem;
 }
 
 .text-fade{
@@ -134,7 +134,7 @@ body{
 .cta__plan{
     background-color: var(--clr-primary-cyan);
     color: var(--clr-neutral-300);    
-    padding: 1.75rem var(--pad-hor);
+    padding: 2.25rem var(--pad-hor);
 }
 
 .cta__text{
@@ -153,7 +153,7 @@ body{
     color: var(--clr-neutral-300);
     font-weight: var(--fw-700);
     font-size: 1rem;
-    box-shadow: 0px 15px 20px -10px var(--clr-light-cyan);
+    box-shadow: 0px 15px 20px -10px rgb(78 158 172);
     margin: 2.25rem 0 0;
     cursor: pointer;
 }
