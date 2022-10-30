@@ -95,7 +95,8 @@ body{
 
 .text-fade{
     opacity: 0.6;
-    font-weight: var(--fw-400)
+    font-weight: var(--fw-400);
+    font-size: 0.8rem;
 }
 
 .text-bold{
