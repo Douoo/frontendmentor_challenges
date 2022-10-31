@@ -93,19 +93,8 @@ select {
 body{
     font-family: var(--ff-primary);
 }
- 
-.container{
-    width: min(640px, 90%);
-    margin: 0 auto;
-}
 
-.main{
-    margin:7rem auto;
-}
-
-.intro{
-    text-align: center;
-}
+/* Typography */
 
 .intro__title{
     font-size:var(--fs-title);
@@ -130,6 +119,22 @@ body{
     text-align: start;
     padding-left: 2rem;
 }
+
+
+/* Layout */
+ 
+.container{
+    width: min(640px, 90%);
+    margin: 0 auto;
+}
+
+.main{
+    margin:5rem auto;
+}
+
+.intro{
+    text-align: center;
+}
 .logo{
     margin:2rem auto;
 }
@@ -138,6 +143,8 @@ body{
     text-align: center;
     margin: 1em 0 5em;
 }
+
+/* Form and Form-control Styling */
 
 .form{
     display: flex;
@@ -183,6 +190,8 @@ body{
     border-color: var(--clr-light-blue);
 }
 
+/* Button Stylings */
+
 .btn{
     display: block;
     width: 100%;
@@ -198,7 +207,6 @@ body{
 .btn:hover{
     background-color: var(--clr-light-blue);
 }
-
 
 .social-btns{
     width: 100%;
@@ -225,6 +233,8 @@ body{
     opacity: 0.8;
 }
 
+/* Footer */
+
 footer > *{
     margin-top: 1em;
 }
@@ -235,7 +245,7 @@ footer p{
     font-size: var(--fs-body);
 }
 
-
+/* Desktop styling */
 @media(min-width: 600px){
     .intro__title{
         font-size: 2.5rem;
