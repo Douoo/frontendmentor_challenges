@@ -16,7 +16,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -78,7 +77,6 @@ input.addEventListener('invalid', (event)=>{
 ```
 
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
