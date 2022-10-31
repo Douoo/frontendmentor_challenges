@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="main container">
+    <img class="logo" src="images/logo.svg" alt="ping company logo">
+    <section class="intro">
+      <h1 class="intro__title">We are launching <span class="text-bold">soon!</span></h1>
+      <p class="intro__text">Subscribe and get notified</p>
+    </section>
+    <section class="subscribe-form">
+      <form id="subscribeFormEl" class="form">
+        <div class="form-control">
+          <input type="email" placeholder="Your email address..." pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" name="email" id="email" required>
+          <label for="email"></label>
+          <small class="input-msg"></small>
+        </div>
+        <button type="submit" class="btn btn-block">Notify Me</button>
+      </form>
+    </section>
+    <div class="illustrator">
+      <img src="images/illustration-dashboard.png" alt="">
+    </div>
+
+  </main>
+
+ 
+ 
+
+  <footer class="container">
+    <div class="social-btns">
+      <a href="https://facebook.com" target="_blank" class="share-icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="share-icon">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="share-icon">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Douo</a>.
+    </p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
