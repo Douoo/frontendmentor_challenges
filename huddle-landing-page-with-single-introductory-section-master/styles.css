@@ -1,0 +1,254 @@
+:root{
+    --clr-primary-violet: hsl(257, 40%, 49%);
+    --clr-primary-softmagneta: hsl(300, 69%, 71%);
+    --clr-white: #fff;
+    --ff-heading: 'Poppins', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-600: 600;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body{
+    background-color: var(--clr-primary-violet);    
+    background-image: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size:contain;    
+    font-family: var(--ff-body);
+    color: var(--clr-white);
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4{
+    font-family: var(--ff-heading);
+}
+
+.intro__cta-title, .intro__cta-text{
+    text-align: center;
+}
+
+.intro__cta-title{
+    font-size: 1.5rem;
+}
+
+.intro__cta-text{
+    font-size: 1rem;
+}
+
+/* Navbar element */
+.logo{
+    display: flex;
+
+}
+
+.logo-img{
+    height: 40px;
+}
+
+
+
+/* Layout */
+.container{
+    width: min(1100px, 85%);
+    margin: auto;
+}
+
+
+/* Header */
+header{
+    margin: 2.25rem 0;
+}
+
+/* Intro section */
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem ;
+}
+
+.intro__image, .intro__cta{
+    width: 100%;
+}
+
+.intro__image{
+    margin: 0 0 3rem;
+}
+
+.intro__cta > *+*{
+    margin-top: 2rem;
+}
+
+
+
+.d-block{
+    display: block;
+    width:100%
+}
+
+/* Primary button and share icon buttons */
+
+.btn{
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    border: none;
+    color: var(--clr-primary-violet);
+    box-shadow: 1px 10px 10px -2px #543D8F;
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--clr-white);
+    background: var(--clr-primary-softmagneta);
+}
+
+.social-share{
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.icon-btn{
+    width: 50px;
+    height: 50px;
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+
+.icon-btn:hover{
+    color: var(--clr-primary-softmagneta);
+    border-color: var(--clr-primary-softmagneta);
+}
+
+
+@media(min-width: 800px){
+    body{
+        background-image: url('images/bg-desktop.svg');
+        background-size: cover;
+    }
+
+    header{
+        margin: 2.25rem 0 5rem;
+    }
+    .intro{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .intro__image,
+    .intro__cta{
+        width: 100%;
+    }
+
+
+    .intro__cta-title, .intro__cta-text{
+        text-align: start;
+    }
+
+    .intro__cta-title{
+        font-size: 2.5rem;
+    }
+
+    .intro__cta-text{
+        font-size:1.125rem
+    }
+
+    .btn{
+        margin-left: 0;
+    }
+
+    .social-share{
+        justify-content: end;
+    }
+}
