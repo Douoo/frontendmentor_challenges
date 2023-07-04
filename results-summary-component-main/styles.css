@@ -1,0 +1,277 @@
+:root {
+    --clr-primary-hsl-400: 252, 100%, 67%;
+    --clr-primary-hsl-500: 256, 72%, 46%;
+    --clr-secondary-hsl-400: 241, 81%, 54%;
+    --clr-secondary-hsl-500: 241, 72%, 46%;
+
+    --clr-neutral-hsl-100: 0, 0%, 100%;
+    --clr-neutral-hsl-200: 221, 100%, 96%;
+    --clr-neutral-hsl-300: 241, 100%, 89%;
+    --clr-neutral-hsl-700: 224, 30%, 27%;
+
+    --clr-primary-400: hsl(var(--clr-primary-hsl-400));
+    --clr-primary-500: hsl(var(--clr-primary-hsl-500));
+
+    --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
+    --clr-secondary-500: hsl(var(--clr-secondary-hsl-400));
+
+    --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+    --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+    --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
+    --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
+
+
+    --clr-red: hsl(0, 100%, 67%);
+    --clr-yellow: hsl(39, 100%, 56%);
+    --clr-green: hsl(166, 100%, 37%);
+    --clr-blue: hsl(234, 85%, 45%);
+
+    --clr-accent-1: 0, 100%, 67%;
+    --clr-accent-2: 39, 100%, 56%;
+    --clr-accent-3: 166, 100%, 37%;
+    --clr-accent-4: 234, 85%, 45%;
+
+    --ff-default: 'HankenGrotesk';
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+
+    --fs-headline-sm: 1.75rem;
+    --fs-headline-md: 2rem;
+    --fs-headline-lg: 5rem;
+
+    --fs-body-sm: 1.125rem;
+    --fs-body: 1.25rem;
+    --fs-body-lg: 1.75rem;
+
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: var(--ff-default);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-body-sm);
+}
+
+@media (min-width: 600px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}
+
+.section-title {
+    font-size: var(--fs-body-lg);
+    font-weight: var(--fw-bold);
+}
+
+.result-title {
+    font-size: var(--fs-headline-md);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+}
+
+.primary-button {
+    background: var(--clr-neutral-700);
+    color: var(--clr-neutral-100);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30rem;
+    cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+    background: linear-gradient(var(--clr-primary-400), var(--clr-secondary-400));
+}
+
+.result-summary {
+    --border-radius: 2rem;
+    --default-padding: 2rem;
+}
+
+.result {
+    color: hsla(var(--clr-neutral-hsl-100), 0.7);
+    background: linear-gradient(var(--clr-primary-400), var(--clr-secondary-400));
+    text-align: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: var(--default-padding) calc(var(--default-padding)*1.5);
+}
+
+
+
+.result-score {
+    width: 12rem;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background: linear-gradient(var(--clr-primary-500), var(--clr-secondary-500));
+    display: grid;
+    place-content: center;
+    margin-inline: auto;
+}
+
+.result-score span {
+    display: block;
+    font-size: var(--fs-headline-lg);
+    font-weight: var(--fw-black);
+    color: var(--clr-neutral-100);
+}
+
+.grid-flow {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: 2rem;
+}
+
+.summary {
+    padding: var(--default-padding);
+}
+
+.summary-item,
+.flex-group {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.summary-item {
+    justify-content: space-between;
+    color: hsla(var(--clr-neutral-hsl-700), 0.6);
+    font-weight: var(--fw-bold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.summary-score {
+    color: hsla(var(--clr-neutral-hsl-700), 0.7);
+}
+
+.summary-score span {
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-black);
+}
+
+[data-item-type="accent-1"] {
+    color: var(--clr-red);
+    background-color: hsla(var(--clr-accent-1), 0.1);
+}
+
+[data-item-type="accent-2"] {
+    color: var(--clr-yellow);
+    background-color: hsla(var(--clr-accent-2), 0.1);
+}
+
+[data-item-type="accent-3"] {
+    color: var(--clr-green);
+    background-color: hsla(var(--clr-accent-3), 0.1);
+
+}
+
+[data-item-type="accent-4"] {
+    color: var(--clr-blue);
+    background-color: hsla(var(--clr-accent-4), 0.1);
+
+}
+
+
+@media (min-width: 600px) {
+    .result-summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 46rem;
+        box-shadow: 0.5rem 1rem 3rem hsla(var(--clr-neutral-hsl-700), 0.2);
+        border-radius: var(--border-radius);
+        margin-inline: 2rem;
+    }
+
+    .result{
+        border-radius: var(--border-radius);
+        overflow: hidden;
+    }
+}
