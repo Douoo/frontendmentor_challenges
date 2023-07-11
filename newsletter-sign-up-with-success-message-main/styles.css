@@ -1,0 +1,292 @@
+:root {
+    --clr-primary-700: hsl(4, 100%, 67%);
+    --clr-primary-500: #FD5378;
+
+    --clr-primary-700-hsl: 4, 100%, 67%;
+
+    --clr-neutral-900: hsl(234, 29%, 20%);
+    --clr-neutral-700: hsl(235, 18%, 26%);
+    --clr-neutral-400: hsl(231, 7%, 60%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-default: 'Roboto', sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --fs-body: 16px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-neutral-700);
+    font-family: var(--ff-default);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.attribution {
+    color: var(--clr-neutral-100);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-neutral-100);
+}
+
+.title {
+    font-size: 2.75rem;
+    margin: 1rem 0;
+    line-height: 1.25;
+}
+
+.input-msg {
+    color: var(--clr-primary-700);
+    font-weight: bold;
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-flow {
+    display: grid;
+}
+
+.card {
+    background: var(--clr-neutral-100);
+
+}
+
+.card__content {
+    order: 2;
+    padding: 1.75rem;
+}
+
+.icon-check {
+    height: 21px;
+    width: 21px;
+    margin-right: 0.75rem;
+}
+
+.icon-success {
+    height: 5rem;
+    width: 5rem;
+    display: block;
+}
+
+.card__image {
+    order: 1;
+    width: 100%;
+}
+
+.form-control {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.form-control label {
+    font-weight: var(--fw-bold);
+}
+
+.form-control input {
+    display: block;
+    height: 40px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+}
+
+.form-control input:not(:focus):invalid.error,
+.form-control input:not(:focus):not(:placeholder-shown):invalid.error {
+    background-color: hsla(var(--clr-primary-700-hsl), 0.2);
+    border: 1px solid var(--clr-primary-700);
+}
+
+.form-control input:not(:focus):invalid.error~.input-msg,
+.form-control input:not(:focus):not(:placeholder-shown):invalid.error~.input-msg {
+    display: block;
+}
+
+.btn-primary {
+    background: var(--clr-neutral-900);
+    border: none;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    color: var(--clr-neutral-100);
+    width: 100%;
+    font-weight: var(--fw-bold);
+    font-size: 1.125rem;
+    cursor: pointer;
+
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background: linear-gradient(0.25turn, var(--clr-primary-700), var(--clr-primary-500));
+}
+
+#success {
+    max-width: 50%;
+    padding: 3rem;
+    font-size: 1.25rem;
+}
+
+.success__content {
+    margin: 1rem 0 2.5rem;
+}
+
+footer {
+    display: none;
+}
+
+@media(max-width: 738px) {
+
+    #success {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        padding-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .success__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        flex: 2;
+
+    }
+
+}
+
+@media(min-width: 738px) {
+    body {
+        min-height: 100vh;
+    }
+
+
+    .card {
+        border-radius: 1.5rem;
+        align-items: center;
+        margin-inline: auto;
+        padding: 1.25rem;
+    }
+
+    .grid-flow {
+        grid-template-columns: 1fr 0.75fr;
+    }
+
+    .card__content {
+        order: 1;
+        padding: 1.5rem;
+    }
+
+    .card__image {
+        order: 2;
+    }
+
+    footer {
+        display: block;
+    }
+
+}
