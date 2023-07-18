@@ -1,0 +1,249 @@
+:root {
+    --clr-primary-800: hsl(259, 100%, 65%);
+    --clr-primary-500: hsl(0, 100%, 67%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(0, 0%, 94%);
+    --clr-neutral-300: hsl(0, 0%, 86%);
+    --clr-neutral-500: hsl(0, 1%, 44%);
+    --clr-neutral-900: hsl(0, 0%, 8%);
+
+    --fs-input: 2rem;
+    --fs-title: 5rem;
+
+    --ff-default: 'Poppins', sans-serif;
+    --fw-black: 800;
+    --fw-bold: 700;
+    --fw-regular: 400
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    background: var(--clr-neutral-200);
+    display: grid;
+    place-items: center;
+    font-family: var(--ff-default);
+    font-weight: var(--fw-regular);
+}
+
+.container {
+    width: min(640px, 90%);
+    margin-inline: auto;
+}
+
+.card {
+    background-color: var(--clr-neutral-100);
+    padding: 2rem;
+    border-radius: 0.5rem 0.5rem 5rem;
+}
+
+.flex-row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+}
+
+.form-control label {
+    display: block;
+    width: 100%;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-500);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+/* The following 2 properties will remove the up and down arrow in the input[type="number"] fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox Browser*/
+input[type=number] {
+    appearance: textfield;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--clr-neutral-300);
+    padding: 1rem 0.75rem;
+    border-radius: 0.725rem;
+    font-weight: var(--fw-black);
+    font-size: 1.25rem;
+}
+
+input[type=number]:focus {
+    border-color: var(--clr-primary-800);
+    outline: none !important;
+}
+
+.form-control.error input:not(:focus) {
+    border-color: var(--clr-primary-500);
+}
+
+.form-control.error input:not(:focus):not(:placeholder-shown) {
+    border-color: var(--clr-primary-500);
+}
+
+
+.form-control.error label {
+    color: var(--clr-primary-500);
+}
+
+.form-control .input-msg {
+    color: var(--clr-primary-500);
+    font-style: italic;
+    display: none;
+}
+
+.form-control.error .input-msg {
+    display: block;
+}
+
+.display-block {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 4.725rem 0;
+    border-bottom: 1px solid var(--clr-neutral-300);
+}
+
+.btn-arrow {
+    background-color: var(--clr-primary-800);
+    border: none;
+    padding: 1rem;
+    border-radius: 100vh;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    cursor: pointer;
+}
+
+.btn-arrow:hover,
+.btn-arrow:focus {
+    background-color: var(--clr-neutral-900);
+}
+
+.result-text {
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 1.15;
+}
+
+.result-text span {
+    color: var(--clr-primary-800)
+}
+
+@media(min-width: 760px) {
+
+    .flex-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .form-control input {
+        padding: 0.725rem;
+        font-size: var(--fs-input);
+        letter-spacing: 0.1rem;
+    }
+
+    .display-block {
+        margin: 3em 0;
+    }
+
+    .btn-arrow {
+        transform: translate(0%, -50%);
+        right: 0;
+        top: 0.5rem;
+    }
+
+
+    .result-text {
+        font-size: var(--fs-title);
+        font-style: italic;
+        line-height: 1.15;
+    }
+}

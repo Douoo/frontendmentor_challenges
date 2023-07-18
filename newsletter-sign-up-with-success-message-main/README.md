@@ -59,7 +59,7 @@ Users should be able to:
 
 ### What I learned
 
-This project helped me revise on how I can add validation to a form using css and js altogther (using the :invalid css property).
+ This project helped me revise how to add validation to a form using CSS and js altogether (using the :invalid CSS property).
 ```
 .form-control input:not(:focus):invalid.error,
 .form-control input:not(:focus):not(:placeholder-shown):invalid.error {
