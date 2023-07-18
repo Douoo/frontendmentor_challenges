@@ -17,6 +17,27 @@
     --fw-regular: 400
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-display: swap;
+    font-weight: 700;
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-display: swap;
+    font-weight: 800;
+    src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
 /* Box sizing rules */
 *,
 *::before,
