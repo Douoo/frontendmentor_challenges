@@ -252,7 +252,7 @@ input[type=number]:focus {
         letter-spacing: 0.1rem;
     }
 
-    .display-block {
+    .btn-container {
         margin: 3em 0;
     }
 
