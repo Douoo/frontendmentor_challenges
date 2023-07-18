@@ -122,7 +122,7 @@ body {
 }
 
 .container {
-    width: min(640px, 90%);
+    width: min(800px, 90%);
     margin-inline: auto;
 }
 
@@ -203,7 +203,7 @@ input[type=number]:focus {
     display: block;
 }
 
-.display-block {
+.btn-container {
     display: block;
     width: 100%;
     position: relative;
@@ -222,6 +222,7 @@ input[type=number]:focus {
     transform: translate(50%, -50%);
     right: 50%;
     cursor: pointer;
+    font-size: 0;
 }
 
 .btn-arrow:hover,
@@ -266,5 +267,6 @@ input[type=number]:focus {
         font-size: var(--fs-title);
         font-style: italic;
         line-height: 1.15;
+        font-size: 6rem;
     }
 }
