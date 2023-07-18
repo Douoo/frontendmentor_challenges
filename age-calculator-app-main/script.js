@@ -19,10 +19,18 @@ ageCalcForm.addEventListener("submit", (event) => {
   const inputYear = yearFieldController.value;
 
   const currentDate = new Date();
+  const userInputDate = new Date(inputYear, inputMonth, inputDate);
 
-  validYear = checkInputValidity(yearFieldController);
-  validMonth = checkInputValidity(monthFieldController);
-  validDate = checkDateValidity(dayFieldController, inputMonth);
+  let validYear = checkInputValidity(yearFieldController);
+  let validMonth = checkInputValidity(monthFieldController);
+  let validDate = checkDateValidity(dayFieldController, inputMonth);
+
+  if (userInputDate > currentDate) {
+    validYear = false;
+    showMessage(yearFieldController, "Must be in the past");
+    showMessage(monthFieldController, "");
+    showMessage(dayFieldController, "");
+  }
 
   if (validYear && validMonth && validDate) {
     yearsPlaceholder.innerText = currentDate.getFullYear() - inputYear;
@@ -32,7 +40,6 @@ ageCalcForm.addEventListener("submit", (event) => {
 });
 
 function showMessage(input, errMsg) {
-  console.log(input);
   const fieldController = input.parentElement;
   const small = fieldController.querySelector("small");
   fieldController.classList.add("error");
@@ -51,7 +58,7 @@ function checkInputValidity(input) {
   const formController = input.parentElement;
   let isValid = true;
   formController.classList.remove("error");
-  if (isNaN(value) || value < 1 || value == "") {
+  if (isNaN(value) || value < 1 || !value) {
     showMessage(input, "The field is required");
     isValid = false;
   }
