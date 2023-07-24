@@ -46,7 +46,7 @@ function showMessage(input, errMsg) {
   small.innerText = errMsg;
 }
 
-//To check number of day during FEB
+//To check number of days during FEB
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
