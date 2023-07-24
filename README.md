@@ -27,3 +27,4 @@ Comments and suggestions can be sent via [@Douoo](https://www.instagram.com/douo
 | 16  | [Calculator app](https://douoo.github.io/frontendmentor_challenges/calculator-app/)| [Link to GitHub repo](https://github.com/Douoo/frontendmentor_challenges/tree/main/calculator-app) |
 | 17  | [Result Summary Card Component](https://douoo.github.io/frontendmentor_challenges/results-summary-component-main/)| [Link to GitHub repo](https://github.com/Douoo/frontendmentor_challenges/tree/main/results-summary-component-main) |
 | 18| [Age Calculator](https://douoo.github.io/frontendmentor_challenges/age-calculator-app-main/)| [Link to Github repo](https://github.com/Douoo/frontendmentor_challenges/tree/main/age-calculator-app-main)
+| 19| [News Homepage](https://douoo.github.io/frontendmentor_challenges/news-homepage-main/)| [Link to Github repo](https://github.com/Douoo/frontendmentor_challenges/tree/main/news-homepage-main)
