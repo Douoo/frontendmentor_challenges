@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container card">
+        <div class="notification__header">
+          <h1 class="notification__header__title d-flex" data-count>Notifications</h1>
+          <button class="text-btn" id="markButton">Mark all as read</button>
+        </div>
+        <div class="notification__list">
+          <div class="notification__tile unread">
+            <img
+              src="assets/images/avatar-mark-webber.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Mark Webber</a> reacted
+                to your recent post My first tournament today!
+                <span class="unread-icon"></span>
+              </p>
+              <p class="text-light">1m ago</p>
+            </div>
+          </div>
+          <div class="notification__tile unread">
+            <img
+              src="assets/images/avatar-angela-gray.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Angela Gray</a> followed
+                you
+                <span class="unread-icon"></span>
+              </p>
+              <p class="text-light">5m ago</p>
+            </div>
+          </div>
+          <div class="notification__tile unread">
+            <img
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Jacob Thompson</a> has
+                joined your group
+                <a class="text-link text-bold clr-blue" href="#"> Chess Club </a
+                ><span class="unread-icon"></span>
+              </p>
+              <p class="text-light">1 day ago</p>
+            </div>
+          </div>
+          <div class="notification__tile">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Rizky Hasanuddin</a>
+                sent you a private message
+              </p>
+              <p class="text-light">5 days ago</p>
+
+              <div class="notification__message">
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification__tile">
+            <img
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Kimberly Smith</a>
+                commented on your picture
+              </p>
+              <p class="text-light">1 week ago</p>
+            </div>
+            <img
+              class="notification__tail"
+              src="assets/images/image-chess.webp"
+              alt="A person playing chess"
+            />
+          </div>
+
+          <div class="notification__tile">
+            <img
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Nathan Peterson</a>
+                reacted to your recent post
+                <a class="text-link text-bold" href="#"
+                  >5 end-game strategies to increase your win rate</a
+                >
+              </p>
+              <p class="text-light">2 weeks ago</p>
+            </div>
+          </div>
+
+          <div class="notification__tile">
+            <img
+              src="assets/images/avatar-anna-kim.webp"
+              alt="notification lead image"
+              class="notification__lead"
+            />
+            <div class="notification__content">
+              <p class="notification__text">
+                <a class="text-bold text-link" href="#">Anna Kim</a> left the
+                group
+                <a class="text-link text-bold clr-blue" href="#">
+                  Chess Club
+                </a>
+              </p>
+              <p class="text-light">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Douoo</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
