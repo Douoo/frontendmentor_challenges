@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="grid-flow container">
+      <div class="placeholder">
+        <div class="card--front">
+          <svg
+            class="card__logo"
+            width="84"
+            height="47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+            <path
+              d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+              stroke="#fff"
+            />
+          </svg>
+          <p class="card__num" data-card="num">0000 0000 0000 0000</p>
+          <p class="card__holder" data-card="holder">Jane Appleseed</p>
+          <p class="card__expiry">
+            <span data-card="expiry-month">00</span>/<span
+              data-card="expiry-month"
+              >00</span
+            >
+          </p>
+          <img src="images/bg-card-front.png" alt="debit card front page" />
+        </div>
+        <div class="card--back">
+          <p class="card__cvc" data-card="cvc">000</p>
+          <img src="images/bg-card-back.png" alt="debit card back page" />
+        </div>
+      </div>
+      <section id="formEl">
+        <form class="p-16">
+          <div class="form-control">
+            <label for="name">Cardholder name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. Jane Appleseed"
+              required
+            />
+            <small class="error-msg"></small>
+          </div>
+          <div class="form-control">
+            <label for="card_num">Card number</label>
+            <input
+              type="text"
+              name="card_num"
+              id="card_num"
+              placeholder="e.g. 1234 5678 9123 0000"
+              required
+              minlength="16"
+              maxlength="19"
+            />
+            <small class="error-msg">Wrong format, numbers only</small>
+          </div>
+          <div class="d-flex">
+            <div>
+              <label for="exp_date">Exp. Date(MM/YY)</label>
+              <div class="form-row">
+                <div class="form-control">
+                  <input
+                    type="number"
+                    name="exp_month"
+                    id="exp_month"
+                    min="1"
+                    max="12"
+                    placeholder="MM"
+                    required
+                    maxlength="2"
+                  />
+                  <small class="error-msg"></small>
+                </div>
+                <div class="form-control">
+                  <input
+                    type="number"
+                    name="exp_year"
+                    id="exp_year"
+                    placeholder="YY"
+                    maxlength="2"
+                    required
+                  />
+                  <small class="error-msg"></small>
+                </div>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="cvc">CVC</label>
+              <input
+                type="number"
+                id="cvv"
+                name="cvv"
+                placeholder="e.g. 123"
+                max="999"
+                minlength="3"
+                maxlength="3"
+                required
+              />
+              <small class="error-msg"></small>
+            </div>
+          </div>
+          <button class="btn-primary">Confirm</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Douoo">Douoo</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
