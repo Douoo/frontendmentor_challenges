@@ -74,7 +74,7 @@ Let me know if there is more efficient way to get around this 🙂.
 
 ### Continued development
 
-I started this project with ReactJS but I was a bit frustrated with the number of input fields I had to manage. I didn't want to use useState for validation purpose therefore I reverted back to vanilla JS. It was not much different using VanillaJS but I was able to use one method for all the invalid events. But I hope to complete this project in ReactJS with a form validation where I don't have to use multiple useState or may be make one state that can manage each form state. I perfer to use useRef but still useState plays a key role to achieve this. I didn't want to re-render each and related components on every form submission. I will look into this in more detail and see if there are is efficient way to achieve this and if not I guess I will go ahead and use useState. 
+I started this project with ReactJS but I was a bit frustrated with the number of input fields I had to manage. I didn't want to use useState for validation purpose therefore I reverted back to vanilla JS. It was not much different using VanillaJS but I was able to use one method for all the invalid events. But I hope to complete this project in ReactJS with a form validation where I don't have to use multiple useState or may be make one state that can manage each form state. I prefer to use useRef but still useState plays a key role to achieve this. I didn't want to re-render each and related components on every form submission. I will look into this in more detail and see if there are is efficient way to achieve this and if not I guess I will go ahead and use useState. 
 
 
 ## Author

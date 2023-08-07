@@ -83,7 +83,7 @@
           </div>
           <div class="d-flex">
             <div>
-              <label for="exp_date">Exp. Date(MM/YY)</label>
+              <label for="exp_month">Exp. Date(MM/YY)</label>
               <div class="form-row">
                 <div class="form-control">
                   <input
@@ -94,7 +94,6 @@
                     max="12"
                     placeholder="MM"
                     required
-                    maxlength="2"
                   />
                   <small class="error-msg"></small>
                 </div>
@@ -104,7 +103,7 @@
                     name="exp_year"
                     id="exp_year"
                     placeholder="YY"
-                    maxlength="2"
+                    max="99"
                     required
                   />
                   <small class="error-msg"></small>
@@ -112,15 +111,13 @@
               </div>
             </div>
             <div class="form-control">
-              <label for="cvc">CVC</label>
+              <label for="cvv">CVC</label>
               <input
                 type="number"
                 id="cvv"
                 name="cvv"
                 placeholder="e.g. 123"
                 max="999"
-                minlength="3"
-                maxlength="3"
                 required
               />
               <small class="error-msg"></small>
