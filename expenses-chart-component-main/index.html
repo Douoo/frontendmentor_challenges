@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div>
+        <div class="card d-flex bg-primary text-neutral-300 m-bt-32">
+          <p class="text-lead">
+            My balance <span class="d-block text-bold text-lg">$921.48</span>
+          </p>
+          <svg
+            width="72"
+            height="48"
+            viewBox="0 0 72 48"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#382314" cx="48" cy="24" r="24" />
+              <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="bg-neutral-200 card">
+          <h1 class="text-dark text-title m-bt-32">Spending - Last 7 days</h1>
+          <div class="chart">
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="mon"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">mon</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="tue"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">tue</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="wed"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">wed</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="thu"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">thu</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="fri"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">fri</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="sat"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">sat</span>
+            </div>
+            <div class="chart__bar">
+              <div class="chart__stat">
+                <div
+                  class="chart__stat--fill"
+                  data-date="sun"
+                  data-spending
+                  data-value
+                ></div>
+              </div>
+              <span class="label">sun</span>
+            </div>
+          </div>
+
+          <hr class="divider" />
+          <div class="d-flex text-lead text-brown">
+            <p>
+              Total this month
+              <span class="text-dark text-bold text-lg d-block">$478.33</span>
+            </p>
+            <p class="text-right">
+              <span class="text-bold d-block text-dark">+2.4%</span> from last
+              month
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Douooo</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
