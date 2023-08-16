@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Live site](https://douoo.github.io/frontendmentor_challenges/intro-section-with-dropdown-navigation-main/)
-- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/intro-section-with-dropdown-navigation-mainn)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/intro-section-with-dropdown-navigation-main)
 ## My process
 
 ### Built with

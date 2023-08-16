@@ -91,6 +91,7 @@ select {
 body {
     font-family: var(--ff-default);
     font-size: var(--fs-body);
+    background-color: var(--clr-neutral-100);
 }
 
 /* Utility classes */
@@ -193,6 +194,10 @@ header {
     background-repeat: no-repeat;
     height: 1.625rem;
     width: 1.625rem;
+}
+
+.nav__logo {
+    font-size: 0;
 }
 
 .nav {
@@ -356,7 +361,7 @@ header {
 
     /* Utility classes */
     .heading-1 {
-        font-size: 5.2rem;
+        font-size: 5rem;
         line-height: 1;
     }
 
