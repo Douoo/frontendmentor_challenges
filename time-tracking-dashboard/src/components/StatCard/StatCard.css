@@ -1,0 +1,79 @@
+.accent-0 {
+    background-color: var(--clr-lt-red);
+}
+
+.accent-1 {
+    background-color: var(--clr-st-blue);
+}
+
+.accent-2 {
+    background-color: var(--clr-pink);
+}
+
+.accent-3 {
+    background: var(--clr-green);
+}
+
+.accent-4 {
+    background-color: var(--clr-violet);
+}
+
+.accent-5 {
+    background-color: var(--clr-orange);
+}
+
+
+.bg-neutral {
+    background-color: var(--clr-neutral-700);
+}
+
+.bg-neutral:hover {
+    background-color: #333A7B;
+}
+
+.bg-illustrator {
+    position: absolute;
+    width: 99.9%;
+    z-index: -1;
+    transform: translateY(-2.75rem);
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+
+.top-round-border {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card {
+    cursor: pointer;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.p-16 {
+    padding: 1.5rem;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Higlight class */
+.h-lt {
+    fill: var(--clr-neutral-300);
+}
+
+.h-lt:hover,
+.h-lt:focus-visible {
+    fill: var(--clr-neutral-100);
+}
+
+@media (min-width: 780px) {
+    .card {
+        margin-top: 3rem;
+    }
+}

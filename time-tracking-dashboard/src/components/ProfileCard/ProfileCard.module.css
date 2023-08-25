@@ -1,0 +1,30 @@
+.profile {
+    background-color: var(--clr-primary-800);
+    border-radius: 1rem;
+}
+
+.active {
+    color: var(--clr-neutral-100);
+}
+
+.bg-neutral {
+    background-color: var(--clr-neutral-700);
+}
+
+
+.top-round-border {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.p-16 {
+    flex: 2;
+    padding: 1.5rem;
+}
+
+
+.circle__avatar {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border: 0.25rem solid var(--clr-neutral-100);
+    border-radius: 100%;
+}

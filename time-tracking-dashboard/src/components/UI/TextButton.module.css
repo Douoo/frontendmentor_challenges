@@ -1,0 +1,11 @@
+.text-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--clr-neutral-300);
+    cursor: pointer;
+}
+
+.text-btn:hover,
+.text-btn:focus-visible {
+    color: var(--clr-neutral-100);
+}

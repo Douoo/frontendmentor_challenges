@@ -1,0 +1,16 @@
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+@media (min-width: 780px) {
+
+    .d-flex {
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,61 @@
+.d-grid {
+  display: grid;
+  /* gap: 1rem; */
+}
+
+.container {
+  margin: 1rem auto;
+}
+
+@media (min-width: 780px) {
+  .container {
+    width: min(85%, 1100px);
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (min-width: 780px) {
+
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .span-two {
+    grid-row: span 2;
+  }
+
+  .card {
+    margin-top: 3rem;
+  }
+
+  #profile {
+    grid-area: profile;
+  }
+
+  #work {
+    grid-area: Work;
+  }
+
+  #play {
+    grid-area: Play;
+  }
+
+  #study {
+    grid-area: Study;
+  }
+
+  #exercise {
+    grid-area: Exercise;
+  }
+
+  #social {
+    grid-area: Social;
+  }
+
+  #self-care {
+    grid-area: self-care;
+  }
+}
