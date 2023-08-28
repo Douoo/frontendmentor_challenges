@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Live Site](https://douoo.github.io/frontendmentor_challenges/results-summary-component-main/)
-- Live Site URL: [Add live site URL here](https://github.com/Douoo/frontendmentor_challenges/tree/main/results-summary-component-main)
+- Live Site URL: [Solution url](https://github.com/Douoo/frontendmentor_challenges/tree/main/results-summary-component-main)
 
 ## My process
 
@@ -70,7 +70,7 @@ I will be focusing on building websites using ReactJS after doing a couple of mo
 
 ## Author
 
-Lets 
+Lets connect
 
 - GitHub Profile - [@Douoo](https://github.com/Douoo) 
 - Frontend Mentor - [@Douoo](https://www.frontendmentor.io/profile/Douoo)

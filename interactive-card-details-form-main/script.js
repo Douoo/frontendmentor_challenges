@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
 
   const currDate = new Date();
   const cardDate = new Date(`${expMonth}/01/20${expYear}`);
-  console.log(cardDate);
+
   if (currDate > cardDate) {
     showErrorMsg(cardExpMonthInput, "Expired date inserted");
     showErrorMsg(cardExpYearInput);
@@ -52,7 +52,6 @@ function validateField(event) {
   const fieldElement = event.target;
   const { value, validity, name } = event.target;
   fieldElement.classList.add("error");
-  console.log(validity);
   const errMsg = fieldElement.nextElementSibling;
   if (validity.valueMissing) {
     errMsg.textContent = "Can't be blank";
@@ -133,7 +132,6 @@ cardNumInput.addEventListener("input", (event) => {
   event.target.value = formatCardNumber(value);
   cardNum.innerHTML = value;
   if (value.length > 18) {
-    console.log("focus on month");
     cardExpMonthInput.focus();
   }
 });

@@ -190,7 +190,7 @@ li {
     margin: 1rem 0;
 }
 
-.form-control input:not(:focus):invalid.error,
+.form-control input:invalid.error,
 .form-control input:not(:focus):not(:placeholder-shown):invalid.error {
     background-color: hsla(var(--clr-primary-700-hsl), 0.2);
     border: 1px solid var(--clr-primary-700);
