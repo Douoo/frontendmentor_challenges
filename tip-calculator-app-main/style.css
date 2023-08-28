@@ -1,0 +1,292 @@
+:root {
+    --clr-primary-800: hsl(172, 67%, 45%);
+
+    --clr-neutral-800: hsl(183, 100%, 15%);
+    --clr-neutral-700: hsl(186, 14%, 43%);
+    --clr-neutral-600: hsl(184, 14%, 56%);
+    --clr-neutral-300: hsl(185, 41%, 84%);
+    --clr-neutral-200: hsl(189, 41%, 97%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --clr-disabled: #0A676D;
+    --clr-disable-text: #055d64;
+
+    --ff-primary: 'Space Mono', monospace;
+    --fs-body: 24px;
+
+    --fw-bold: 700;
+
+    --padding-default: 1.5rem;
+    --margin-default: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-800);
+    display: grid;
+    place-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-white {
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-primary {
+    background-color: var(--clr-neutral-800);
+}
+
+.text-large {
+    font-size: 3rem;
+}
+
+.text-white {
+    color: var(--clr-neutral-100)
+}
+
+.text-primary {
+    color: var(--clr-primary-800)
+}
+
+.mb-16 {
+    margin-bottom: var(--margin-default);
+}
+
+.mt-16 {
+    margin-top: var(--margin-default);
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mx-16 {
+    margin: auto var(--margin-default);
+}
+
+.my-16 {
+    margin: var(--margin-default) auto;
+}
+
+.btn {
+    background-color: var(--clr-neutral-800);
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-neutral-100);
+    padding: 0.5rem 1.5rem;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-800);
+}
+
+.btn-secondary {
+    background-color: var(--clr-disabled);
+    color: var(--clr-disable-text);
+}
+
+.active,
+.btn-primary:focus,
+.btn-primary:focus-visible {
+    background: var(--clr-primary-800);
+    color: var(--clr-neutral-800);
+}
+
+
+/* Layout */
+
+.center {
+    margin: 3rem auto;
+}
+
+.card,
+.card--elevated {
+    padding: var(--padding-default);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form styling */
+
+/* Remove the arrows from number field in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
+.form-control {
+    margin-bottom: var(--margin-default);
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 0.315rem;
+    background-color: var(--clr-neutral-200);
+    border: 1px solid transparent;
+    border-radius: 0.312rem;
+    color: var(--clr-neutral-800);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+    text-align: end;
+}
+
+.form-control.err input {
+    border-color: red;
+}
+
+.errMsg {
+    position: absolute;
+    top: 0.25rem;
+    right: 0;
+    color: red;
+    display: none;
+}
+
+.form-control.err .errMsg {
+    display: block;
+}
+
+.form-control input:hover {
+    border: 1px solid var(--clr-primary-800);
+}
+
+.form-control .icon-prefix {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+@media (min-width: 730px) {
+
+    .container {
+        width: min(80%, 800px);
+        margin: auto;
+    }
+
+    .d-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .row-2-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .col-lg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
