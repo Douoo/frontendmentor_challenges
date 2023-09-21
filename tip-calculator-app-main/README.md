@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live Site](https://douoo.github.io/frontendmentor_challenges/tip-calculator-app-main/)
-- Live Site URL: [Solution url](https://github.com/Douoo/frontendmentor_challenges/tree/main/tip-calculator-app-main)
+- Live Site URL: [Live Site](https://douoo.github.io/frontendmentor_challenges/tip-calculator-app-main/)
+- Solution URL: [Solution url](https://github.com/Douoo/frontendmentor_challenges/tree/main/tip-calculator-app-main)
 
 ## My process
 

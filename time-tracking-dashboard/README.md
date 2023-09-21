@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/douoo/frontendmentor_challenges/tree/main/time-tracking-dashboard)
-- Live Site URL: [Add live site URL here](https://time-tracking-dashboard-five-pi.vercel.app/)
+- Solution URL: [Source code](https://github.com/douoo/frontendmentor_challenges/tree/main/time-tracking-dashboard)
+- Live Site URL: [Preview](https://time-tracking-dashboard-five-pi.vercel.app/)
 
 ## My process
 
