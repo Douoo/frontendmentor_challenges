@@ -406,6 +406,10 @@ header {
 
 
 #intro h1 {
+    color: var(--clr-neutral-100);
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
     width: 100%;
     position: absolute;
     top: 0;
@@ -510,6 +514,9 @@ footer {
 }
 
 @media(min-width: 750px) {
+    #intro h1 {
+        font-size: 5rem;
+    }
     .nav {
         position: relative;
     }
