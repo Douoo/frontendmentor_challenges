@@ -33,8 +33,8 @@ Users should be able to:
 ![Mobile](screenshot/mobile.png)
 ### Links
 
-- Solution URL: [Source code](https://douoo.github.io/frontendmentor_challenges/workit-landing-page/)
-- Live Site URL: [Live site](https://github.com/Douoo/frontendmentor_challenges/tree/main/workit-landing-page)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/workit-landing-page)
+- Live Site URL: [Live site](https://douoo.github.io/frontendmentor_challenges/workit-landing-page/)
 
 ## My process
 

@@ -213,6 +213,21 @@ body {
 }
 
 /* Feature section  */
+.feature {
+    position: relative;
+    margin-bottom: 9rem;
+}
+
+.feature::before {
+    content: '';
+    position: absolute;
+    inset: -4rem;
+    background-color: var(--clr-neutral-200);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(2);
+    z-index: -4;
+}
+
 .feature__list {
     padding: 0;
     list-style: none;
@@ -409,6 +424,7 @@ body {
 .text-heading-lg {
     font-size: var(--fs-heading-lg);
     font-family: var(--ff-secondary);
+    line-height: 5rem;
 }
 
 .text-heading-sm {
