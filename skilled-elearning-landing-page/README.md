@@ -12,8 +12,6 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,9 +27,8 @@ Users should be able to:
 ![Mobile](screenshot/mobile.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor_challenges/skilled-elearning-landing-page/)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/skilled-elearning-landing-page)
 ## My process
 
 ### Built with
