@@ -208,7 +208,12 @@ header {
     }
 }
 
-@media(min-width: 60em) {}
+@media(min-width: 60em) {
+    .hero__img {
+        top: 5.8rem;
+        right: 0;
+    }
+}
 
 .cta {
     display: grid;
@@ -245,6 +250,12 @@ header {
         background-color: var(--clr-primary-900);
         padding-top: 5.9rem;
     }
+
+    .cta__flow {
+        grid-template-areas:
+            'form'
+            'partners';
+    }
 }
 
 @media(min-width: 48em) and (max-width: 60em) {
@@ -253,12 +264,11 @@ header {
     }
 }
 
-@media(min-width: 48em) {
-    .cta__flow {
-        grid-template-areas:
-            'form'
-            'partners';
+@media(min-width: 60em) {
+    .cta {
+        top: 4rem;
     }
+
 }
 
 .form-container {
