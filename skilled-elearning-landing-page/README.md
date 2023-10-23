@@ -22,9 +22,11 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+
 ![Desktop](screenshot/desktop.png)
 ![Table view](screenshot/tablet.png)
 ![Mobile](screenshot/mobile.png)
+
 ### Links
 
 - Live Site URL: [Live site DEMO](https://douoo.github.io/frontendmentor_challenges/skilled-elearning-landing-page/)

@@ -234,11 +234,12 @@ body {
 
 .cta {
     background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    padding-bottom: 3rem;
 }
 
 @media(min-width: 60em) {
     .cta {
-        padding-bottom: 0 9.75rem;
+        padding-bottom: 9.75rem;
     }
 }
 
@@ -283,6 +284,10 @@ body {
     .courses {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.6rem;
+    }
+
+    .courses:last-child {
+        padding-bottom: 3rem;
     }
 
     .card--cta,
