@@ -1,0 +1,431 @@
+:root {
+    --clr-primary-900: #13183F;
+    --clr-primary-600: #F74780;
+    --clr-primary-400: #666CA3;
+
+    --clr-neutral-400: #83869A;
+    --clr-neutral-100: #fff;
+
+    --clr-grad-primary: linear-gradient(180deg, #FF6F48, #F02AA6);
+    --clr-grad-primary-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+
+    --clr-grad-secondary: linear-gradient(180deg, #4851FF, #F02AA6);
+    --clr-grad-secondary-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
+    --ff-default: 'Plus Jakarta Sans', sans-serif;
+
+    --fs-100: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1.75rem;
+    --fs-600: 2rem;
+    --fs-700: 2.5rem;
+    --fs-800: 3rem;
+    --fs-900: 3.5rem;
+
+
+    --fs-heading-primary: var(--fs-700);
+    --fs-heading-secondary: var(--fs-400);
+    --fs-title: var(--fs-300);
+    --fs-body: var(--fs-100);
+    --fs-btn: var(--fs-100);
+
+    --fw-bold: 800;
+    --fw-700: 700;
+    --fw-regular: 500;
+
+    --size-100: 1rem;
+    --size-200: 1.125rem;
+    --size-300: 1.25rem;
+    --size-400: 1.5rem;
+    --size-500: 1.75rem;
+    --size-600: 2rem;
+    --size-700: 2.5rem;
+    --size-800: 3rem;
+    --size-900: 3.5rem;
+}
+
+@media(min-width: 60em) {
+    :root {
+        --fs-heading-primary: var(--fs-900);
+        --fs-heading-secondary: var(--fs-600);
+        --fs-title: var(--fs-400);
+        --fs-body: var(--fs-200);
+        --fs-btn: var(--fs-200);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: var(--ff-default);
+}
+
+/* Header  */
+.primary-navbar {
+    padding-block: 1rem 2.38rem;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__container {
+    display: grid;
+    align-items: center;
+    min-height: 35rem;
+    margin-bottom: 4rem;
+}
+
+.hero__content {
+    max-width: 28.5625rem;
+}
+
+.hero__content p {
+    max-width: 35ch;
+}
+
+@media(max-width: 50em) {
+
+    .hero__container {
+        margin-top: 2.5rem;
+    }
+
+}
+
+@media(min-width: 60em) {
+    .hero__container {
+        min-height: 45rem;
+    }
+}
+
+
+.hero__content *+* {
+    margin-top: 2.5rem;
+}
+
+
+@media(min-width: 48em) and (max-width:70em) {
+
+    .hero__container {
+        grid-template-areas: 'content hero__img';
+        max-height: 35rem;
+    }
+
+    .hero__content {
+        grid-area: content;
+        align-self: self-start;
+        margin-top: 6rem;
+    }
+
+    .hero__img {
+        grid-area: hero__img;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(42%, -12%);
+        z-index: -1;
+    }
+
+}
+
+@media(min-width: 70em) {
+    .primary-navbar {
+        padding-block: 1.81rem 2.38rem;
+    }
+
+    .hero__container {
+        grid-template-areas: 'content hero__img';
+    }
+
+    .hero__content {
+        grid-area: content;
+    }
+
+    .hero__img {
+        grid-area: hero__img;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(35%, -18%);
+        z-index: -1;
+    }
+}
+
+
+/* Courses  */
+
+.cta {
+    background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+}
+
+@media(min-width: 60em) {
+    .cta {
+        padding-bottom: 0 9.75rem;
+    }
+}
+
+.courses {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.card--cta,
+.card--course {
+    border-radius: 0.937rem;
+}
+
+.card--cta {
+    background: var(--clr-grad-primary);
+    padding: 1.5rem 1.8rem 2rem 1.75rem;
+}
+
+.card--course {
+    position: relative;
+    padding: 3.5rem 2rem 2rem;
+    background-color: var(--clr-neutral-100);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.card--course p {
+    color: var(--clr-neutral-400);
+}
+
+.card--course *+* {
+    margin-bottom: 1rem;
+}
+
+.card__icon--course {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+@media(min-width: 50em) and (max-width:60em) {
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .card--cta,
+    .card--course {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media(min-width: 60em) {
+
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.87rem;
+    }
+
+    .card--cta {
+        padding: 4rem 2rem 8rem;
+        margin-bottom: 5rem;
+    }
+
+    .card--course {
+        margin-bottom: 5rem;
+    }
+
+}
+
+/* Footer  */
+.footer {
+    padding: 2.25rem 0;
+}
+
+.attribute {
+    margin-top: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.attribute a {
+    color: var(--clr-primary-600);
+}
+
+/* Utility classes  */
+.container {
+    --default-padding: 1rem;
+    width: min(calc(100% - var(--default-padding)), 1110px);
+    margin-inline: auto;
+}
+
+@media(min-width: 50em) and (max-width:60em) {
+
+    .container {
+        --default-padding: var(--size-700)
+    }
+
+}
+
+@media(min-width: 60em) {
+
+    .container {
+        --default-padding: 10.3rem;
+    }
+
+}
+
+.heading-primary {
+    font-size: var(--fs-heading-primary);
+}
+
+.heading-secondary {
+    font-size: var(--fs-heading-secondary);
+}
+
+.text-title {
+    font-size: var(--fs-title);
+    line-height: 2rem;
+}
+
+.text-body {
+    font-size: var(--fs-body);
+    line-height: 1.625rem;
+}
+
+.text-bold {
+    font-weight: var(--fw-bold);
+}
+
+.clr-white {
+    color: var(--clr-neutral-100);
+}
+
+.clr-grey {
+    color: var(--clr-neutral-400);
+}
+
+.bg-dark {
+    background-color: var(--clr-primary-900);
+}
+
+.btn {
+    border-radius: 100rem;
+    border: none;
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-700);
+    color: var(--clr-neutral-100);
+    padding: 0.8rem 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn.text {
+    background: transparent;
+    color: var(--clr-primary-600);
+    padding-inline: 0;
+}
+
+.btn.text:hover,
+.btn.text:focus-visible {
+    color: #FFA7C3;
+}
+
+.btn--primary {
+    background-color: var(--clr-primary-900);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+    background-color: var(--clr-primary-400);
+}
+
+.btn--secondary {
+    background: var(--clr-grad-primary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+    background: var(--clr-grad-primary-hover);
+}
+
+.btn--idle {
+    background: var(--clr-grad-secondary);
+}
+
+.btn--idle:hover,
+.btn--idle:focus-visible {
+    background: var(--clr-grad-secondary-hover);
+}
