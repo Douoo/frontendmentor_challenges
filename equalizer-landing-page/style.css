@@ -265,6 +265,12 @@ body::before {
     border-radius: 0.75rem;
 }
 
+.showcase__price{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .flow {
     display: grid;
     gap: var(--spacing, 1rem);
@@ -388,7 +394,12 @@ body::before {
 
 .heading-secondary {
     font-size: var(--fs-heading-secondary);
+    font-weight: var(--fw-bold);
     line-height: var(--lh-400);
+}
+
+.text-title{
+    font-size: var(--fs-title);
 }
 
 .text-body-pm {
