@@ -162,7 +162,7 @@ body::before {
 
 @media(min-width: 48em) and (max-width: 60em) {
     body::before {
-        background: url('assets/bg-main-tablet.png') ;
+        background: url('assets/bg-main-tablet.png');
     }
 }
 
@@ -174,7 +174,9 @@ body::before {
 }
 
 .primary-navbar {
-    margin-block: 3.87rem 10.37rem;
+    position: relative;
+    padding-block: 3.87rem 10.37rem;
+    overflow-x: hidden;
 }
 
 
@@ -187,20 +189,23 @@ body::before {
         background-image: url('assets/bg-pattern-1.svg');
         background-repeat: no-repeat;
         z-index: 10;
-        width: 19.5rem;
-        height: 29.35rem;
     }
 }
 
 @media(min-width: 48rem) and (max-width: 60em) {
     .primary-navbar::before {
+        width: 16.66669rem;
+        height: 25rem;
         background-size: 70%;
         transform: translateX(30%);
     }
 }
 
 @media(min-width: 60em) {
-    .primary-navbar::before {}
+    .primary-navbar::before {
+        width: 19.5rem;
+        height: 29.35rem;
+    }
 }
 
 
@@ -303,7 +308,7 @@ body::before {
         right: 6rem;
         transform: translateY(9rem);
     }
-    
+
 
 }
 
