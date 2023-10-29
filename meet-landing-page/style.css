@@ -134,7 +134,6 @@ select {
 body {
     font-family: var(--ff-default);
     line-height: var(--lh-body);
-    overflow-x: hidden;
 }
 
 /* Header  */
@@ -145,6 +144,11 @@ body {
 }
 
 /* Hero Styles  */
+.intro{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
 .hero {
     margin-bottom: 5rem;
     max-width: 28rem;
@@ -180,7 +184,7 @@ body {
         left: -2.5rem;
         transform: translateY(10rem);
         height: 100%;
-        width: 100%;
+        width: 394px;
         background-image: url('assets/desktop/image-hero-left.png');
         background-repeat: no-repeat;
     }
