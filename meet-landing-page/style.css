@@ -140,15 +140,16 @@ body {
 .nav-wrapper {
     display: grid;
     place-items: center;
-    margin: 3rem auto;
+    margin: 3rem auto 2.5rem;
 }
 
 /* Hero Styles  */
-.intro{
+.intro {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
+
 .hero {
     margin-bottom: 5rem;
     max-width: 28rem;
@@ -266,7 +267,6 @@ body {
 }
 
 .feature__container--secondary {
-
     margin-inline: auto;
     display: grid;
     place-items: center;
@@ -287,6 +287,11 @@ body {
 }
 
 @media(min-width: 60em) {
+
+    .feature--secondary {
+        padding-block: 4rem;
+    }
+
     .feature__container--secondary {
         --container-padding: 10.3rem;
         --mx-width: 1110px;
@@ -309,13 +314,14 @@ body {
 }
 
 /* Utility classes */
-.row{
+.row {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
+
 .container {
     --default-padding: 1.5rem;
     width: min(calc(100% - var(--default-padding)), 1110px);
@@ -323,10 +329,11 @@ body {
 }
 
 @media(min-width: 48em) {
-    .row{
+    .row {
         flex-direction: row;
     }
 }
+
 @media(min-width: 48em) and (max-width: 60em) {
     .container {
         --default-padding: 2em;
