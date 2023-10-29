@@ -183,7 +183,7 @@ body {
         position: absolute;
         top: 0;
         left: -2.5rem;
-        transform: translateY(10rem);
+        transform: translateY(7rem);
         height: 100%;
         width: 394px;
         background-image: url('assets/desktop/image-hero-left.png');
@@ -197,7 +197,7 @@ body {
         right: -2.5rem;
         height: 100%;
         width: 394px;
-        transform: translateY(10rem);
+        transform: translateY(7rem);
         background-image: url('assets/desktop/image-hero-right.png');
         background-repeat: no-repeat;
     }
