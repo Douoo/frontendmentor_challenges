@@ -141,7 +141,7 @@ body {
 .nav-wrapper {
     display: grid;
     place-items: center;
-    margin: 3rem auto;
+    margin: 5rem auto 4rem;
 }
 
 /* Hero Styles  */
