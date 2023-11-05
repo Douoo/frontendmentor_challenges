@@ -37,8 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://douoo.github.io/frontendmentor_challenges/bmi-calculator/)
+- Solution URL: [Solution url](https://github.com/Douoo/frontendmentor_challenges/tree/main/bmi-calculator)
+
 
 ## My process
 
