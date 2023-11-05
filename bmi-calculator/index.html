@@ -19,7 +19,7 @@
     <header class="header">
       <div class="container">
         <div class="nav-wrapper">
-          <img src="assets/images/logo.svg" alt="BMI logo" />
+          <img aria-hidden="true" src="assets/images/logo.svg" alt="BMI logo" />
         </div>
         <section class="hero">
           <div class="clr-dark text-sm-center mb-48">
@@ -41,7 +41,6 @@
                     name="type"
                     value="metric"
                     id="metric"
-                    placeholder="0"
                     checked
                   />
                   <label class="label-lg" for="metric" value="metric"
@@ -54,11 +53,8 @@
                     name="type"
                     id="imperial"
                     value="imperial"
-                    placeholder="0"
                   />
-                  <label class="label-lg" for="imperial" value="imperial"
-                    >Imperial</label
-                  >
+                  <label class="label-lg" for="imperial">Imperial</label>
                 </div>
               </div>
               <div id="formHolder">
@@ -69,7 +65,7 @@
                     <small class="prefix">cm</small>
                   </div>
                   <div class="form-control mt-16">
-                    <label for="height">Weight</label>
+                    <label for="weight">Weight</label>
                     <input type="number" name="weight" id="weight" />
                     <small class="prefix">kg</small>
                   </div>
@@ -89,146 +85,148 @@
       </div>
     </header>
 
-    <section class="info clr-dark">
-      <div class="info__flow | container mb-48">
-        <div class="img-container">
-          <img
-            src="assets/images/image-man-eating.webp"
-            alt="image of a man eating"
-          />
+    <main>
+      <section class="info clr-dark">
+        <div class="info__flow | container mb-48">
+          <div class="img-container">
+            <img
+              src="assets/images/image-man-eating.webp"
+              alt="image of a man eating"
+            />
+          </div>
+          <div>
+            <h2 class="heading-md my-48 clr-dark">
+              What your BMI result means
+            </h2>
+            <p>
+              A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+              Maintaining a healthy weight may lower your chances of
+              experiencing health issues later on, such as obesity and type 2
+              diabetes. Aim for a nutritious diet with reduced fat and sugar
+              content, incorporating ample fruits and vegetables. Additionally,
+              strive for regular physical activity, ideally about 30 minutes
+              daily for five days a week.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="heading-md my-48 clr-dark">What your BMI result means</h2>
+
+        <div class="info__container">
+          <div class="flow--info | container py-48">
+            <div class="info__content">
+              <img src="assets/images/icon-eating.svg" alt="icon eating" />
+              <div>
+                <h3 class="mb-24">Healthy eating</h3>
+                <p>
+                  Healthy eating promotes weight control, disease prevention,
+                  better digestion, immunity, mental clarity, and mood.
+                </p>
+              </div>
+            </div>
+            <div class="info__content">
+              <img src="assets/images/icon-exercise.svg" alt="icon exercise" />
+              <div>
+                <h3 class="mb-24">Regular exercise</h3>
+                <p>
+                  Exercise improves fitness, aids weight control, elevates mood,
+                  and reduces disease risk, fostering wellness and longevity.
+                </p>
+              </div>
+            </div>
+            <div class="info__content">
+              <img src="assets/images/icon-sleep.svg" alt="icon sleep" />
+              <div>
+                <h3 class="mb-24">Adequate sleep</h3>
+                <p>
+                  Sleep enhances mental clarity, emotional stability, and
+                  physical wellness, promoting overall restoration and
+                  rejuvenation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bmi__limit | container clr-dark">
+        <div class="bmi__limit__text">
+          <h2 class="heading-md mb-32">Limitations of BMI</h2>
           <p>
-            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
-            Maintaining a healthy weight may lower your chances of experiencing
-            health issues later on, such as obesity and type 2 diabetes. Aim for
-            a nutritious diet with reduced fat and sugar content, incorporating
-            ample fruits and vegetables. Additionally, strive for regular
-            physical activity, ideally about 30 minutes daily for five days a
-            week.
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
           </p>
         </div>
-      </div>
 
-      <div class="info__container">
-        <div class="flow--info | container py-48">
-          <div class="info__content">
-            <img src="assets/images/icon-eating.svg" alt="icon eating" />
-            <div>
-              <h3 class="mb-24">Healthy eating</h3>
-              <p>
-                Healthy eating promotes weight control, disease prevention,
-                better digestion, immunity, mental clarity, and mood.
-              </p>
-            </div>
-          </div>
-          <div class="info__content">
-            <img src="assets/images/icon-exercise.svg" alt="icon exercise" />
-            <div>
-              <h3 class="mb-24">Regular exercise</h3>
-              <p>
-                Exercise improves fitness, aids weight control, elevates mood,
-                and reduces disease risk, fostering wellness and longevity.
-              </p>
-            </div>
-          </div>
-          <div class="info__content">
-            <img src="assets/images/icon-sleep.svg" alt="icon sleep" />
-            <div>
-              <h3 class="mb-24">Adequate sleep</h3>
-              <p>
-                Sleep enhances mental clarity, emotional stability, and physical
-                wellness, promoting overall restoration and rejuvenation.
-              </p>
-            </div>
-          </div>
+        <!-- <div class="flow--limit"> -->
+        <div class="card" data-detail="gender">
+          <h3 class="card__header">
+            <span
+              ><img
+                src="assets/images/icon-gender.svg"
+                alt="gender icon" /></span
+            >Gender
+          </h3>
+          <p>
+            The development and body fat composition of girls and boys vary with
+            age. Consequently, a child's age and gender are considered when
+            evaluating their BMI.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section class="bmi__limit | container clr-dark">
-      <div class="bmi__limit__text">
-        <h2 class="heading-md mb-32">Limitations of BMI</h2>
-        <p>
-          Although BMI is often a practical indicator of healthy weight, it is
-          not suited for every person. Specific groups should carefully consider
-          their BMI outcomes, and in certain cases, the measurement may not be
-          beneficial to use.
-        </p>
-      </div>
+        <div class="card" data-detail="age">
+          <h3 class="card__header">
+            <span><img src="assets/images/icon-age.svg" alt="age icon" /></span>
+            Age
+          </h3>
+          <p>
+            In aging individuals, increased body fat and muscle loss may cause
+            BMI to underestimate body fat content.
+          </p>
+        </div>
 
-      <!-- <div class="flow--limit"> -->
-      <div class="card" data-detail="gender">
-        <h3 class="card__header">
-          <span
-            ><img src="assets/images/icon-gender.svg" alt="gender icon" /></span
-          >Gender
-        </h3>
-        <p>
-          The development and body fat composition of girls and boys vary with
-          age. Consequently, a child's age and gender are considered when
-          evaluating their BMI.
-        </p>
-      </div>
+        <div class="card" data-detail="pregnancy">
+          <h3 class="card__header">
+            <span
+              ><img
+                src="assets/images/icon-pregnancy.svg"
+                alt="pregnancy icon" /></span
+            >Pregnancy
+          </h3>
+          <p>
+            Expectant mothers experience weight gain due to their growing baby.
+            Maintaining a healthy pre-pregnancy BMI is advisable to minimise
+            health risks for both mother and child.
+          </p>
+        </div>
+        <div class="card" data-detail="muscle">
+          <h3 class="card__header">
+            <span
+              ><img
+                src="assets/images/icon-muscle.svg"
+                alt="muscle icon" /></span
+            >Muscle
+          </h3>
+          <p>
+            BMI may misclassify muscular individuals as overweight or obese, as
+            it doesn't differentiate muscle from fat.
+          </p>
+        </div>
+        <div class="card place-self-center" data-detail="race">
+          <h3 class="card__header">
+            <span
+              ><img src="assets/images/icon-race.svg" alt="race icon" /></span
+            >Race
+          </h3>
+          <p>
+            Certain health concerns may affect individuals of some Black and
+            Asian origins at lower BMIs than others. To learn more, it is
+            advised to discuss this with your GP or practice nurse.
+          </p>
+        </div>
+      </section>
+    </main>
 
-      <div class="card" data-detail="age">
-        <h3 class="card__header">
-          <span><img src="assets/images/icon-age.svg" alt="age icon" /></span>
-          Age
-        </h3>
-        <p>
-          In aging individuals, increased body fat and muscle loss may cause BMI
-          to underestimate body fat content.
-        </p>
-      </div>
-
-      <div class="card" data-detail="pregnancy">
-        <h3 class="card__header">
-          <span
-            ><img
-              src="assets/images/icon-pregnancy.svg"
-              alt="pregnancy icon" /></span
-          >Pregnancy
-        </h3>
-        <p>
-          Expectant mothers experience weight gain due to their growing baby.
-          Maintaining a healthy pre-pregnancy BMI is advisable to minimise
-          health risks for both mother and child.
-        </p>
-      </div>
-      <div class="card" data-detail="muscle">
-        <h3 class="card__header">
-          <span
-            ><img src="assets/images/icon-muscle.svg" alt="muscle icon" /></span
-          >Muscle
-        </h3>
-        <p>
-          BMI may misclassify muscular individuals as overweight or obese, as it
-          doesn't differentiate muscle from fat.
-        </p>
-      </div>
-      <div class="card place-self-center" data-detail="race">
-        <h3 class="card__header">
-          <span><img src="assets/images/icon-race.svg" alt="race icon" /></span
-          >Race
-        </h3>
-        <p>
-          Certain health concerns may affect individuals of some Black and Asian
-          origins at lower BMIs than others. To learn more, it is advised to
-          discuss this with your GP or practice nurse.
-        </p>
-      </div>
-      <!-- </div> -->
-    </section>
-
-    <!-- 
-  Your BMI is...
-
- add score 
-
-  Your BMI suggests you're add classification . 
-  Your ideal weight is between add range. -->
     <script src="script.js"></script>
   </body>
 </html>
