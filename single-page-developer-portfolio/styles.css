@@ -48,6 +48,7 @@
   :root {
     --fs-heading-lg: var(--fs-700);
     --fs-heading-md: var(--fs-600);
+    --fs-heading-sm: var(--fs-400);
     --fs-body: var(--fs-200);
     --fs-caption: var(--fs-300);
 
@@ -59,6 +60,7 @@
   :root {
     --fs-heading-lg: var(--fs-800);
     --fs-heading-md: var(--fs-600);
+    --fs-heading-sm: var(--fs-400);
     --fs-body: var(--fs-200);
     --fs-caption: var(--fs-300);
 
@@ -163,7 +165,7 @@ body {
 }
 
 .header {
-  padding-block: 1.25em 3em;
+  padding-block: 2.5em 3em;
   position: relative;
   overflow-x: clip;
 }
