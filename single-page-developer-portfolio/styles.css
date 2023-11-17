@@ -203,6 +203,7 @@ body {
 }
 
 .nav-brand {
+  font-size: var(--fs-heading-sm);
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
   text-decoration: none;
