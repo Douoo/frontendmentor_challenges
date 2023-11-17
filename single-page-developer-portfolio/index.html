@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-wrapper container">
+        <a class="nav-brand" href="#">adamkeyes</a>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a aria-label="github link" href="https://github.com"
+                ><img src="assets/images/icon-github.svg" alt="icon-github" />
+                <span class="visually-hidden">github</span></a
+              >
+            </li>
+            <li>
+              <a
+                aria-label="frontend mentor link"
+                href="https://frontendmentor.com"
+                ><img
+                  src="assets/images/icon-frontend-mentor.svg"
+                  alt="icon-frontend-mentor"
+                />
+                <span class="visually-hidden">frontend mentor</span></a
+              >
+            </li>
+            <li>
+              <a aria-label="linkedin link" href="https://linkedin.com"
+                ><img
+                  src="assets/images/icon-linkedin.svg"
+                  alt="icon-linkedin"
+                />
+                <span class="visually-hidden">linkedin</span></a
+              >
+            </li>
+            <li>
+              <a aria-label="x.com" href="https://x.com"
+                ><img src="assets/images/icon-twitterx.svg" alt="icon-x" />
+                <span class="visually-hidden">x</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="hero | container">
+        <div class="hero__img">
+          <picture>
+            <source
+              media="(min-width: 48em) and (max-width: 60em)"
+              srcset="assets/images/image-profile-tablet.webp"
+            />
+            <source
+              media="(min-width: 60em)"
+              srcset="assets/images/image-profile-desktop.webp"
+            />
+            <img
+              src="assets/images/image-profile-mobile.webp"
+              alt="Adam Keyes"
+            />
+          </picture>
+        </div>
+        <div class="hero__content">
+          <h1 class="heading-lg">
+            Nice to meet you! I'm
+            <span class="text-highlight">Adam Keyes.</span>
+          </h1>
+          <p>
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+          <a class="text-btn" data-target="formEl" href="#formEl">Contact me</a>
+        </div>
+      </section>
+    </header>
+
+    <section class="skills">
+      <div class="container">
+        <ul class="skill__list">
+          <li class="skill__list__detail">
+            <h2>HTML</h2>
+            <p>4 Years Experience</p>
+          </li>
+          <li class="skill__list__detail">
+            <h2>CSS</h2>
+            <p>4 Years Experience</p>
+          </li>
+          <li class="skill__list__detail">
+            <h2>JavaScript</h2>
+            <p>4 Years Experience</p>
+          </li>
+          <li class="skill__list__detail">
+            <h2>Accessibility</h2>
+            <p>4 Years Experience</p>
+          </li>
+          <li class="skill__detail">
+            <h2>React</h2>
+            <p>3 Years Experience</p>
+          </li>
+          <li class="skill__detail">
+            <h2>Sass</h2>
+            <p>3 Years Experience</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects | container">
+      <div class="d-flex justify-space-between my-24">
+        <h1 class="heading-lg">Projects</h1>
+        <a class="text-btn" data-target="formEl" href="#formEl">Contact me</a>
+      </div>
+      <div class="project__list">
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-1-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">Design portfolio</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a href="#" class="text-btn">View project</a>
+              <a href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-2-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">E-learning landing page</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a href="#" class="text-btn">View project</a>
+              <a href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-3-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">Todo Web App</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a class="text-btn" href="#" class="text-btn">View project</a>
+              <a class="text-btn" href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-4-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">Entertainment Web App</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a href="#" class="text-btn">View project</a>
+              <a href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-5-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">Memory Game</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a href="#" class="text-btn">View project</a>
+              <a href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project__list__item">
+          <div class="project__img">
+            <div class="project__img__overlay">
+              <a class="text-btn" href="#">View project</a>
+              <a class="text-btn" href="#">View code</a>
+            </div>
+            <img
+              src="assets/images/thumbnail-project-6-small.webp"
+              alt="design portfolio"
+              loading="lazy"
+            />
+          </div>
+          <div class="project__detail">
+            <h3 class="heading-sm text-uppercase">Art gallery showcase</h3>
+            <ul class="project__stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="lg-dislpay-none d-flex mt-24">
+              <a href="#" class="text-btn">View project</a>
+              <a href="#" class="text-btn">View code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__layout | container">
+        <div class="">
+          <h1 class="heading-lg mb-24">Contact</h1>
+          <p class="mb-24">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+        <form id="formEl" class="form">
+          <div class="form-control">
+            <label class="visually-hidden" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="NAME"
+              required
+            />
+            <svg
+              class="icon-error"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="11.5" stroke="#FF6F5B" />
+              <rect x="11" y="6" width="2" height="9" rx="1" fill="#FF6F5B" />
+              <rect x="11" y="17" width="2" height="2" rx="1" fill="#FF6F5B" />
+            </svg>
+            <small class="input-msg"></small>
+          </div>
+          <div class="form-control">
+            <label class="visually-hidden" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="EMAIL"
+              required
+            />
+            <svg
+              class="icon-error"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="11.5" stroke="#FF6F5B" />
+              <rect x="11" y="6" width="2" height="9" rx="1" fill="#FF6F5B" />
+              <rect x="11" y="17" width="2" height="2" rx="1" fill="#FF6F5B" />
+            </svg>
+            <small class="input-msg"></small>
+          </div>
+          <div class="form-control">
+            <label class="visually-hidden" for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="MESSAGE"
+              cols="30"
+              rows="5"
+              required
+            ></textarea>
+            <svg
+              class="icon-error"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="11.5" stroke="#FF6F5B" />
+              <rect x="11" y="6" width="2" height="9" rx="1" fill="#FF6F5B" />
+              <rect x="11" y="17" width="2" height="2" rx="1" fill="#FF6F5B" />
+            </svg>
+            <small class="input-msg"></small>
+          </div>
+          <button class="text-btn ml-auto" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="nav-wrapper border-top my-24 container">
+        <a class="nav-brand" href="#">adamkeyes</a>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a aria-label="github link" href="https://github.com"
+                ><img src="assets/images/icon-github.svg" alt="icon-github" />
+                <span class="visually-hidden">github</span></a
+              >
+            </li>
+            <li>
+              <a
+                aria-label="frontend mentor link"
+                href="https://frontendmentor.com"
+                ><img
+                  src="assets/images/icon-frontend-mentor.svg"
+                  alt="icon-frontend-mentor"
+                />
+                <span class="visually-hidden">frontend mentor</span></a
+              >
+            </li>
+            <li>
+              <a aria-label="linkedin link" href="https://linkedin.com"
+                ><img
+                  src="assets/images/icon-linkedin.svg"
+                  alt="icon-linkedin"
+                />
+                <span class="visually-hidden">linkedin</span></a
+              >
+            </li>
+            <li>
+              <a aria-label="x.com" href="https://x.com"
+                ><img src="assets/images/icon-twitterx.svg" alt="icon-x" />
+                <span class="visually-hidden">x</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
