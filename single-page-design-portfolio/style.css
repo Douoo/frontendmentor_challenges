@@ -458,11 +458,7 @@ body {
         place-items: center;
     }
 
-    .skills {
-        grid-template-areas: 'graphics uiux apps'
-            'graphics illustration illustration'
-            'photography motion-graphics motion-graphics';
-    }
+
 
     .slider {
         height: 360px;
@@ -481,9 +477,27 @@ body {
     }
 }
 
-@media(min-width: 48em) and (max-width: 60em) {}
+@media(min-width: 48em) and (max-width: 60em) {
+    .skills {
+        grid-template-areas: 'graphics uiux apps'
+            'graphics illustration illustration'
+            'photography motion-graphics motion-graphics';
+    }
+}
 
 @media(min-width: 60em) {
+
+    .motion-graphics,
+    .illustration {
+        height: 9.88rem;
+    }
+
+    .skills {
+        grid-template-areas: 'graphics uiux apps photography photography'
+            'graphics illustration illustration motion-graphics motion-graphics'
+        ;
+    }
+
     .profile__flow {
         gap: 7rem;
     }
