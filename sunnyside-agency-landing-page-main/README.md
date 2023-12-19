@@ -28,7 +28,7 @@ Users should be able to:
 
 #### Desktop screenshot
 
-![Desktop screenshot](screenshot/desktop_screenshot.png)
+![Desktop screenshot](screenshot/desktop.png)
 
 #### Mobile screenshot
 

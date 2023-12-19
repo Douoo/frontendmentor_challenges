@@ -27,15 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-A screenshot overview of the web page:
-
-![](https://github.com/Douoo/product-preview-card-component/blob/main/Screenshot-56.png)
+![Desktop](screenshot/desktop.png)
 
 ### Links
 
 
-- Live Site URL: [Add live site URL here](https://douoo.github.io/frontendmentor_challenges/product-preview-card-component-main/)
-- GitHub URL: [Add solution URL here](https://github.com/Douoo/frontendmentor_challenges/tree/main/product-preview-card-component-main)
+- Live Site URL: [Preview](https://douoo.github.io/frontendmentor_challenges/product-preview-card-component-main/)
+- GitHub URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/product-preview-card-component-main)
 
 ## My process
 

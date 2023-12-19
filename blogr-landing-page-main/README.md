@@ -28,9 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile view of solution](./design/mobile.png)
-
-![Desktop view of solution](./design/desktop.png)
+![Desktop view](screenshot/desktop.png)
+![Mobile view](screenshot/mobile.png)
 
 ### Links
 

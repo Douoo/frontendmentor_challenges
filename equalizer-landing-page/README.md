@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile view](screenshot/eq-mobile.png)
-![Tablet view](screenshot/eq-tablet.png)
-![Desktop view](screenshot/eq-desktop.png)
+![Mobile view](screenshot/mobile.png)
+![Tablet view](screenshot/tablet.png)
+![Desktop view](screenshot/desktop.png)
 
 ### Links
 
@@ -50,7 +50,7 @@ Practiced my CSS layout skills. The project is simple but the diverse font and l
 
 ## Author
 
-- GitHub Profile - [@Douoo](https://github.com/Douoo) 
+- GitHub Profile - [@Douoo](https://github.com/douoo) 
 - Frontend Mentor - [@Douoo](https://www.frontendmentor.io/profile/Douoo)
 - Twitter - [@Douoo_B](https://twitter.com/Douoo_B)
 

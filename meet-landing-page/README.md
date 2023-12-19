@@ -26,7 +26,7 @@ Users should be able to:
 
 ![Mobile view](screenshot/mobile.png)
 ![Tablet view](screenshot/tablet.png)
-![Desktop view](screenshot/desktop.png)
+![Desktop view](screenshot/desktop_.png)
 
 
 ### Links

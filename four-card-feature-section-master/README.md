@@ -25,11 +25,11 @@ Users should be able to:
 
 <h3>Mobile View</h3>
 
-![](mobile_preview.png)
+![Mobile](screenshot/mobile.png)
 
 <h3>Desktop View</h3>
 
-![](desktop_preview.png)
+![Desktop](screenshot/desktop.png)
 
 ### Links
 
