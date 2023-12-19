@@ -5,6 +5,13 @@ export const info = {
 
 export const challenges = [
   {
+    name: "bmi-calculator",
+    title: "BMI calculator",
+    level: "Junior",
+    internalhost: true,
+    id: 1,
+  },
+  {
     name: "workit-landing-page",
     title: "Workit landing page",
     level: "Newbie",

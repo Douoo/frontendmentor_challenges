@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](screenshots/Desktop.png)
-![Tablet view](screenshots/Tablet.png)
-![Mobile view](screenshots/Mobile.png)
+![Desktop view](screenshot/desktop_.png)
+![Tablet view](screenshot/Tablet.png)
+![Mobile view](screenshot/Mobile.png)
 
 ### Links
 
