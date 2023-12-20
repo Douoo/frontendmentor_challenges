@@ -14,7 +14,7 @@ function createCard(item) {
   const image = `./${item.name}/screenshot/desktop.png`;
   const repo =
     item.internalhost === true
-      ? `https://github.com/elaineleung/frontendmentor/tree/main/${item.name}`
+      ? `https://github.com/douoo/frontendmentor/tree/main/${item.name}`
       : item.repo;
 
   const cardHTML = `
