@@ -1,6 +1,7 @@
 :root {
     --clr-primary-900: hsl(292, 42%, 14%);
-    --clr-primary-800: hsl(292, 16%, 49%);
+    --clr-primary-800: hsl(281, 83%, 54%);
+    --clr-primary-700: hsl(292, 16%, 49%);
     --clr-neutral-400: hsl(275, 100%, 97%);
     --clr-neutral-100: hsl(0, 0%, 100%);
 
@@ -168,8 +169,8 @@ body::before {
     color: var(--clr-primary-900);
 }
 
-.clr-primary-800 {
-    color: var(--clr-primary-800);
+.clr-primary-700 {
+    color: var(--clr-primary-700);
 }
 
 .bg-white {
@@ -183,6 +184,10 @@ body::before {
     cursor: pointer;
 }
 
+.text-expand:hover {
+    color: var(--clr-primary-800);
+}
+
 details {
     max-height: 5rem;
     transition: max-height 1s ease-out;
@@ -192,7 +197,7 @@ details[open] {
     max-height: 50rem;
 }
 
-.text-expand::after {
+details .text-expand::after {
     content: '';
     position: absolute;
     background-image: url('assets/images/icon-plus.svg');
@@ -203,6 +208,6 @@ details[open] {
     background-repeat: no-repeat;
 }
 
-.text-expand[open]::after {
+details[open] .text-expand::after {
     background-image: url('assets/images/icon-minus.svg');
 }

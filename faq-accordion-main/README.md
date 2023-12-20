@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Douoo/frontendmentor_challenges/tree/main/faq-accordion-main)
-- Live Site URL: [Add live site URL here](https://douoo.github.io/frontendmentor_challenges/faq-accordion-main)
+- Solution URL: [Source code](https://github.com/Douoo/frontendmentor_challenges/tree/main/faq-accordion-main)
+- Live Site URL: [Preview](https://douoo.github.io/frontendmentor_challenges/faq-accordion-main)
 
 ## My process
 
@@ -44,5 +44,6 @@ Users should be able to:
 ## Author
 
 - GitHub Profile - [@Douoo](https://github.com/douoo) 
-- Frontend Mentor - [@Douoo](https://www.frontendmentor.io/profile/douoo)
 - Twitter - [@Douoo_B](https://twitter.com/douoo_b)
+- LinkedIn - [Brooksew B.](https://www.linkedin.com/in/brooksewb/)
+- Frontend Mentor - [@Douoo](https://www.frontendmentor.io/profile/douoo)
