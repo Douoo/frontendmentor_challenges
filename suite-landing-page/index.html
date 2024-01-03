@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Suite landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-wrapper container">
+        <a href="#"><img src="assets/logo.svg" alt="suite logo" /></a>
+        <button class="btn-outline">Request Beta Access</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="hero | container">
+          <div class="hero__content | flow">
+            <h1 class="header-lg">
+              A <span class="text-bold">super solution</span> for your
+              <span class="text-bold">business.</span>
+            </h1>
+            <p class="text-body clr-primary-800">
+              Our marketing and sales automations help you scale your outreach
+              to get more leads for your company.
+            </p>
+            <button class="btn-primary">Request Beta Access</button>
+          </div>
+
+          <picture class="hero__img">
+            <source
+              media="(min-width:48rem)"
+              srcset="assets/image-hero-portrait@2x.png"
+            />
+            <img src="assets/image-hero-landscape.png" alt="app preview" />
+          </picture>
+
+          <div class="hero__stat">
+            <div>
+              <h2 class="label-lg text-bold">2K+</h2>
+              <p class="text-label text-uppercase clr-primary-800">Companies</p>
+            </div>
+            <div>
+              <h2 class="label-lg text-bold">8</h2>
+              <p class="text-label text-uppercase clr-primary-800">Languages</p>
+            </div>
+            <div>
+              <h2 class="label-lg text-bold">1.2M</h2>
+              <p class="text-label text-uppercase clr-primary-800">Leads</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="testimonial">
+          <picture class="testimonial__img">
+            <source
+              media="(min-width: 64rem)"
+              srcset="assets/image-jeremy-large.png"
+            />
+            <source
+              media="(min-width: 48rem) and (max-width: 64rem)"
+              srcset="assets/image-jeremy-small.png"
+            />
+            <img src="assets/image-jeremy-small.png" alt="Jeremy" />
+          </picture>
+          <img
+            class="pointer--testimonial"
+            src="assets/pattern-curved-line-2.svg"
+            alt="pointer line"
+          />
+          <blockquote class="testimonial__quote">
+            <h1 class="header-md">
+              It just <span class="text-bold">works.</span>
+            </h1>
+            <p>
+              “I really like how it is an all-in-one solution that handle many
+              of the tasks that you would normally need separate tools to do the
+              same job. This thing is a miracle worker.”
+            </p>
+            <footer>
+              <p class="testimonial__name">Jeremy Robinson</p>
+              <cite class="testimonial__cite text-uppercase">CMO, Fylo</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#">
+        <img src="assets/logo.svg" alt="suite logo" />
+      </a>
+      <p>Copyright - Suite</p>
+      <div class="social-share">
+        <a href="">
+          <img src="assets/icon-facebook.svg" alt="facebook icon" />
+        </a>
+        <a href="">
+          <img src="assets/icon-twitter.svg" alt="twitter icon" />
+        </a>
+        <a href="">
+          <img src="assets/icon-instagram.svg" alt="instagram icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
