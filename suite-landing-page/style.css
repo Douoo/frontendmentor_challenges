@@ -150,7 +150,25 @@ body {
     margin-block: 5rem 3.5rem;
 }
 
+.hero__content {
+    position: relative;
+}
 
+@media(max-width:370px) {
+    .hero__content:before {
+        display: none;
+    }
+}
+
+.hero__content:before {
+    content: '';
+    background-image: url('assets/pattern-curved-line-1.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    transform: translate(45%, -10%);
+    background-size: 50%;
+}
 
 .hero__content p {
     max-width: 21.4375rem;
@@ -266,6 +284,13 @@ body {
     }
 }
 
+@media(min-width: 48em) {
+    .hero__content:before {
+        transform: translate(45%, -10%);
+        background-size: auto;
+    }
+}
+
 @media (min-width: 48em) and (max-width: 64em) {
     .hero {
         grid-template-areas: 'content hero__img'
@@ -315,7 +340,7 @@ body {
 
     .hero__img {
         position: absolute;
-        inset: 0 34rem 0;
+        inset: 0 30rem 0;
         width: 21.875rem;
         height: 37.5rem;
         z-index: -1;
