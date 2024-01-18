@@ -283,6 +283,10 @@ h2,
   flex-direction: column;
   margin-bottom: 7.5rem;
 }
+.hero .hero__content p {
+  max-width: 21.185rem;
+  margin-block: 2rem 4rem;
+}
 
 .back-btn {
   position: absolute;
@@ -333,8 +337,7 @@ h2,
     margin-top: 0;
   }
   .hero .hero__content p {
-    max-width: 21.185rem;
-    margin-bottom: 4rem;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 65em) {

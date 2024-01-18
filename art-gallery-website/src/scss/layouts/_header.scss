@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 7.5rem;
+
+  .hero__content p {
+    max-width: 21.185rem;
+    margin-block: 2rem 4rem;
+  }
 }
 
 .back-btn {
@@ -66,8 +71,7 @@ $small-devices: map-get(
     }
 
     .hero__content p {
-      max-width: 21.185rem;
-      margin-bottom: 4rem;
+      margin-top: 0;
     }
   }
 }
