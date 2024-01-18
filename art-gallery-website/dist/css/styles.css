@@ -95,10 +95,10 @@ picture {
 body {
   color: var(--clr-neutral-400);
   font-family: var(--ff-body);
-  font-size: 1.125rem;
+  font-size: var(--fs-300);
   font-style: normal;
   font-weight: 300;
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 h1,
@@ -224,6 +224,10 @@ h2,
   display: grid;
 }
 
+.gallery-secondary .gallery__content--secondary, .gallery .gallery__content {
+  max-width: 21.875rem;
+}
+
  .gallery .gallery__image {
   width: 100%;
   height: 100%;
@@ -240,7 +244,6 @@ h2,
 .gallery-secondary {
   gap: 1rem;
 }
-
 @media screen and (min-width: 40em) and (max-width: 65em) {
   .gallery-secondary {
     gap: 0.69rem;
@@ -262,7 +265,7 @@ h2,
     order: 1;
   }
   .gallery-secondary {
-    grid-template-areas: "pic1 pic2" "pic1 content";
+    grid-template-areas: "pic1 pic1 pic2" "pic1 pic1 content";
     gap: 1.8rem;
   }
   .gallery-secondary .pic-1 {
@@ -325,9 +328,13 @@ h2,
   .hero .hero__content {
     position: absolute;
     right: 0;
+    height: 21.875rem;
+    align-items: start;
+    margin-top: 0;
   }
   .hero .hero__content p {
     max-width: 21.185rem;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (min-width: 65em) {

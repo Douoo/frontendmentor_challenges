@@ -60,9 +60,14 @@ $small-devices: map-get(
     .hero__content {
       position: absolute;
       right: 0;
+      height: 21.875rem;
+      align-items: start;
+      margin-top: 0;
     }
+
     .hero__content p {
       max-width: 21.185rem;
+      margin-bottom: 4rem;
     }
   }
 }

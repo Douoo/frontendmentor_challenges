@@ -3,10 +3,10 @@
 body {
   color: var(--clr-neutral-400);
   font-family: var(--ff-body);
-  font-size: 1.125rem;
+  font-size: var(--fs-300);
   font-style: normal;
   font-weight: 300;
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 h1,
