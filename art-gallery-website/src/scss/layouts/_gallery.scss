@@ -1,0 +1,76 @@
+@use "../abstracts" as *;
+
+%d-grid {
+  display: grid;
+}
+
+%fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fit-image-cover {
+  @extend %fit-image;
+}
+
+.gallery {
+  @extend %d-grid;
+  .gallery__image {
+    @extend %fit-image;
+  }
+
+  @include responsive(small) {
+    .gallery__image {
+      order: 2;
+    }
+  }
+}
+
+.gallery-secondary {
+  @extend %d-grid;
+  gap: 1rem;
+}
+
+@include tablet-mode {
+  .gallery-secondary {
+    gap: 0.69rem;
+  }
+}
+
+@include responsive(small) {
+  %image-box-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 4.5rem;
+
+    picture {
+      order: 1;
+    }
+  }
+
+  .gallery-secondary {
+    grid-template-areas:
+      "pic1 pic2"
+      "pic1 content";
+    gap: 1.8rem;
+
+    .pic-1 {
+      @extend %image-box-cover;
+      grid-area: pic1;
+    }
+    .pic-2 {
+      @extend %image-box-cover;
+      grid-area: pic2;
+    }
+    .content {
+      grid-area: content;
+    }
+  }
+}

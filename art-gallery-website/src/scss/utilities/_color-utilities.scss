@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+@each $color, $shade in $colors {
+  @each $prop, $value in $shade {
+    .bg-#{$color}-#{$prop} {
+      background-color: $value;
+    }
+  }
+}

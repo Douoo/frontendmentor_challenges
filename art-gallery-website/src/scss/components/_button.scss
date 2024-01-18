@@ -1,0 +1,75 @@
+@use "../base" as *;
+
+.btn {
+  font-family: var(--ff-heading) !important;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-100);
+  position: relative;
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-neutral-900);
+  }
+}
+.btn-dark {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-primary-900) !important;
+  }
+}
+
+.btn-forward {
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../../assets/icon-arrow-right.svg") no-repeat;
+    right: 0;
+    top: 0;
+    transform: translateX(3.5rem);
+    background-color: var(--clr-primary-900);
+    width: 3.5rem;
+    height: 100%;
+    background-position: 50%;
+  }
+
+  &:hover::after {
+    background-color: var(--clr-neutral-900);
+  }
+}
+
+.btn-backward {
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../../assets/icon-arrow-left.svg") no-repeat;
+    left: 0;
+    top: 0;
+    transform: translateX(-3.5rem);
+    background-color: var(--clr-primary-900);
+    width: 3.5rem;
+    height: 100%;
+    background-position: 50%;
+  }
+
+  &:hover::after {
+    background-color: var(--clr-neutral-900);
+  }
+}
+
+.icon-prop {
+  fill: var(--icon-color, var(--clr-neutral-100));
+}
+
+.icon-prop:hover {
+  fill: var(--icon-hover-color, var(--clr-neutral-100));
+}

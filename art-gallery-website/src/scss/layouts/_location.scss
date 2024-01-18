@@ -1,0 +1,24 @@
+@use "gallery" as *;
+@use "../abstracts/mixins" as *;
+
+.location {
+  max-height: 37.5rem;
+}
+
+.location__map {
+  @extend %fit-image;
+  z-index: -1;
+}
+
+.contact {
+  display: grid;
+  gap: 3rem;
+}
+
+@include responsive(small) {
+  .contact {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

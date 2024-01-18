@@ -1,0 +1,5 @@
+@use "colors";
+
+@function color($category, $name) {
+  @return map-get($map: map-get($color, $category), $key: $name);
+}

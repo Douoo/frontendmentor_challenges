@@ -1,0 +1,40 @@
+@use "breakpoints" as *;
+
+@mixin responsive($key) {
+  $breakpoint: map-get(
+    $map: $breakpoints,
+    $key: $key,
+  );
+
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet-mode {
+  $small: map-get(
+    $map: $breakpoints,
+    $key: "small",
+  );
+  $medium: map-get(
+    $map: $breakpoints,
+    $key: "medium",
+  );
+
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin text-weight($weight) {
+  font-weight: $weight;
+}
+
+@mixin round-border($radius: 10px) {
+  border-radius: $radius;
+}
+
+//Gradient generator
+@mixin gradient($angle, $color1, $color2) {
+  background: linear-gradient($angle, $color1, $color2);
+}

@@ -1,0 +1,58 @@
+@use "../abstracts/mixins" as *;
+
+body {
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-body);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--fw-black);
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-600);
+  line-height: 3.4375rem;
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-500);
+  line-height: 2.8125rem;
+}
+
+@include tablet-mode {
+  h1,
+  .h1 {
+    line-height: 4.0625rem;
+  }
+}
+
+@include responsive(medium) {
+  h1,
+  .h1 {
+    line-height: 5.5rem;
+  }
+
+  h2,
+  .h2 {
+    line-height: 3.75rem;
+  }
+}
+
+.text-title {
+  font-size: var(--fs-550);
+}
+
+.text-capitalize {
+  text-transform: uppercase !important;
+}

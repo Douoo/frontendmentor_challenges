@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+@each $property, $value in $spacing {
+  $prefix: map-get(
+    $map: $value,
+    $key: prefix,
+  );
+  $val: map-get(
+    $map: $value,
+    $key: values,
+  );
+
+  @each $prop, $val in $val {
+    .#{$prefix}-#{$prop} {
+      #{$property}: $val;
+    }
+  }
+}

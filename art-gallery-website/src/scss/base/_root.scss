@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
+
+
+:root {
+  --ff-body: "Outfit", sans-serif;
+  --ff-heading: "Big Shoulders Display", sans-serif;
+
+  --fw-regular: 300;
+  --fw-bold: 800;
+  --fw-black: 900;
+
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --clr-#{$color}-#{$prop}: #{$value};
+    }
+  }
+
+  @each $screen-size, $property in $type-scale {
+    @if $screen-size==mobile {
+      @each $prop, $value in $property {
+        --fs-#{$prop}: #{$value};
+      }
+    } @else if $screen-size== "tablet" {
+      @include tablet-mode {
+        @each $prop, $value in $property {
+          --fs-#{$prop}: #{$value};
+        }
+      }
+    } @else {
+      @include responsive(medium) {
+        @each $prop, $value in $property {
+          --fs-#{$prop}: #{$value};
+        }
+      }
+    }
+  }
+}

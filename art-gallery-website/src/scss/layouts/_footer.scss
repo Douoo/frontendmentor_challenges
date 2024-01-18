@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as *;
+
+.footer {
+  display: grid;
+  gap: 1rem;
+
+  p {
+    max-width: 26.875rem;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@include responsive(medium) {
+  .footer {
+    grid-auto-flow: column;
+    gap: 4rem;
+    place-items: start;
+    justify-content: space-between;
+  }
+}
