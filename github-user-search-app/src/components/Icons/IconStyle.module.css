@@ -1,0 +1,19 @@
+.icon-color {
+    fill: var(--clr-icon);
+}
+
+.icon-moon {
+    fill: #697C9A;
+}
+
+.icon-sun {
+    fill: #fff;
+}
+
+.icon-moon:hover {
+    fill: var(--clr-neutral);
+}
+
+.icon-sun:hover {
+    fill: #697C9A;
+}

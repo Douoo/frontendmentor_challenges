@@ -1,0 +1,164 @@
+body {
+  background-color: var(--clr-neutral-900);
+  font-family: var(--ff-default);
+  color: var(--clr-neutral-100);
+}
+
+
+.heading-lg {
+  font-size: var(--fs-heading-lg);
+  font-weight: var(--fw-bold);
+}
+
+.heading {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+}
+
+.text-body {
+  font-size: var(--fs-body);
+  line-height: 1.5625rem;
+}
+
+.text-body-lg {
+  font-size: var(--fs-body-lg);
+}
+
+.text-caption {
+  font-size: var(--fs-caption);
+}
+
+.text-label {
+  font-size: var(--fs-label);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: var(--fw-bold);
+}
+
+.row {
+  display: flex;
+  justify-content: var(--cross-axis-aln, space-between);
+  align-items: var(--main-axis-aln, center);
+  gap: 1.5rem;
+}
+
+.p-16 {
+  padding: 1rem;
+}
+
+.py-16 {
+  padding-block: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-32 {
+  margin-bottom: 2rem
+}
+
+.mb-36 {
+  margin-bottom: 2.25rem;
+}
+
+.clr-neutral {
+  color: var(--clr-neutral) !important;
+}
+
+.user {
+  display: grid;
+  grid-template-areas: 'avatar profile'
+    'data data';
+  gap: 1.5rem;
+  grid-template-columns: 1fr 4fr;
+}
+
+@media(max-width: 60rem) {
+  .user {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media(min-width: 60rem) {
+  .user {
+    grid-template-areas: 'avatar profile'
+      'avatar data';
+  }
+
+  .user__profile__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+}
+
+.user__profile {
+  grid-area: profile;
+}
+
+.profile-picture {
+  grid-area: avatar;
+  border-radius: 30rem;
+  --img-size: 4.375rem;
+  width: min(80%, var(--img-size));
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media(min-width: 45rem) {
+  .user__profile {
+    gap: 2.45rem;
+  }
+
+  .profile-picture {
+    --img-size: 7.3125rem;
+  }
+}
+
+.user__data {
+  grid-area: data;
+}
+
+
+
+.social-links {
+  display: grid;
+  gap: 1.2rem;
+}
+
+@media(min-width:45rem) {
+
+  .social-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.social-links a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  text-decoration: underline;
+}
+
+.clr-primary {
+  color: var(--clr-primary-800);
+}
+
+.bg-dark {
+  background-color: var(--clr-neutral-900);
+}
+
+.border-stadium {
+  border-radius: 0.625rem;
+}

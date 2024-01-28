@@ -1,0 +1,6 @@
+.row {
+    display: flex;
+    justify-content: var(--cross-axis-aln, space-between);
+    align-items: var(--main-axis-aln, center);
+    gap: 1.5rem;
+}

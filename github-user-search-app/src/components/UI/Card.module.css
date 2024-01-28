@@ -1,0 +1,15 @@
+.card {
+    background-color: var(--clr-neutral-800);
+    border-radius: 0.9375rem;
+    padding: 2rem 1.5rem;
+}
+
+[data-theme='light'] .card {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+
+@media(min-width:45rem) {
+    .card {
+        padding: 2.5rem;
+    }
+}
