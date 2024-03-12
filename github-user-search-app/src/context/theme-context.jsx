@@ -2,42 +2,45 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 
 const ThemeContext = React.createContext({
-  themeMode: null,
-  toggleThemeMode: () => {},
+  darkMode: null,
+  toggleDarkMode: () => {},
 });
 
 export function ThemeContextProvider({ children }) {
-  const [themeMode, setThemeMode] = useState(null);
+  //Get the system theme initially
+  const systemThemePref = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  const [darkMode, setDarkMode] = useState(null);
   const themePreference = "theme-preference";
 
-  const themeChangeHandler = (themeMode) => {
-    localStorage.setItem(themePreference, themeMode);
-    setThemeMode(themeMode);
-    document.firstElementChild.setAttribute("data-theme", themeMode);
+  const themeChangeHandler = () => {
+    setDarkMode((prevMode) => !prevMode);
   };
 
   useEffect(() => {
-    //Get the system theme initially
-    const systemThemePref = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-
     //Get if there is any saved theme before hand
     const savedTheme = localStorage.getItem(themePreference);
 
     if (savedTheme) {
-      setThemeMode(savedTheme);
+      setDarkMode(savedTheme);
+    } else {
+      setDarkMode(systemThemePref);
     }
     document.firstElementChild.setAttribute(
-      "data-theme",
+      "theme-dark",
       savedTheme || systemThemePref
     );
   }, []);
 
+  useEffect(() => {
+    document.firstElementChild.setAttribute("theme-dark", darkMode);
+    localStorage.setItem(themePreference, darkMode);
+  }, [darkMode]);
+
   return (
     <ThemeContext.Provider
-      value={{ themeMode: themeMode, toggleThemeMode: themeChangeHandler }}
+      value={{ darkMode: darkMode, toggleDarkMode: themeChangeHandler }}
     >
       {children}
     </ThemeContext.Provider>

@@ -121,7 +121,7 @@ select {
   }
 }
 
-[data-theme='dark'] {
+[theme-dark='true'] {
   --clr-primary-800: hsl(212, 100%, 50%);
   --clr-primary-700: hsl(217, 20%, 51%);
   --clr-primary-600: hsl(217, 35%, 45%);
@@ -140,7 +140,7 @@ select {
   --clr-neutral-100: hsl(0, 0%, 100%);
 }
 
-[data-theme='light'] {
+[theme-dark='false'] {
   --clr-primary-800: hsl(212, 100%, 50%);
   --clr-primary-700: hsl(217, 20%, 51%);
   --clr-primary-600: hsl(217, 35%, 45%);

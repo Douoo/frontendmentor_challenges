@@ -1,0 +1,7 @@
+.d-flex {
+    display: flex;
+    flex-direction: var(--axis-direction, row);
+    gap: var(--flex-gap, 0);
+    align-items: var(--main-alignment, center);
+    justify-content: var(--cross-alignment, center);
+}

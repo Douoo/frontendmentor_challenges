@@ -9,8 +9,6 @@ import IconLink from "../../components/Icons/IconLink";
 
 function User({ userData: user }) {
   const now = new Date(user.created_at);
-  console.log("--------------------");
-  console.log(now);
   const locale = navigator.language;
   const userRegistrationDate = new Intl.DateTimeFormat(locale, {
     day: "numeric",

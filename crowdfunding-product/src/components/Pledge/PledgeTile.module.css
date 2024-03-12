@@ -1,0 +1,202 @@
+.card--bordered {
+    border: 0.06rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.card--bordered:hover,
+.card--bordered:focus-visible {
+    border: 0.09rem solid var(--clr-primary);
+}
+
+.disabled {
+    position: relative;
+    border: 0.09rem solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.disabled::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    cursor: not-allowed;
+    background-color: #fff;
+    opacity: 0.75;
+    z-index: 10;
+}
+
+.pledge__plan--modal {
+    display: grid;
+    grid-template-areas: 'radio title'
+        'description description'
+        'pledge_remaining pledge_remaining';
+    place-content: start;
+    gap: 0.5rem;
+    padding: 1.5rem;
+}
+
+@media(max-width: 45rem) {
+    .pledge__plan--modal {
+        grid-template-columns: 1fr 8fr;
+    }
+}
+
+
+@media (min-width:45rem) {
+    .pledge__plan--modal {
+        grid-template-areas: 'radio title pledge_remaining'
+            'radio description description';
+        grid-template-columns: 1fr 6fr 2fr;
+        place-items: start;
+        gap: 1.5rem;
+    }
+}
+
+
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    transform: translateY(0.175em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--clr-primary);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.pledge__radio {
+    position: relative;
+    grid-area: radio;
+}
+
+.pledge__title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pledge__label {
+    grid-area: label;
+    cursor: pointer;
+}
+
+.pledge__label:hover,
+.pledge__label:focus-visible {
+    color: var(--clr-primary);
+}
+
+.pledge__description {
+    grid-area: description;
+}
+
+.pledge__remaining {
+    grid-area: pledge_remaining;
+}
+
+@media(min-width:45rem) {
+    .pledge__title {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .pledge__remaining {
+        place-self: end;
+    }
+}
+
+.subtitle {
+    grid-area: subtitle;
+    color: var(--clr-primary);
+}
+
+.pledge__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--align-items, space-between);
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-top: 0.35px solid var(--clr-neutral-300);
+}
+
+@media(min-width: 45rem) {
+    .pledge__form {
+        flex-direction: row;
+    }
+}
+
+.pledge__amount {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.pledge__amount small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1rem, 50%);
+    font-weight: var(--fw-bold);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pledge__amount input {
+    -moz-appearance: textfield;
+    border-radius: 30rem;
+    border: 1px solid var(--clr-neutral-300);
+    padding: 0.5rem;
+    padding-left: 2rem;
+    font-weight: var(--fw-bold);
+    width: 6.25rem;
+}
+
+.pledge__amount input.shake {
+    border-color: red;
+    animation: shake 0.5s ease-in-out;
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
