@@ -5,6 +5,29 @@ export const info = {
 
 export const challenges = [
   {
+    name: "art-gallery-website",
+    title: "Art Gallery Website Landing Page",
+    level: "Junior",
+    internalhost: true,
+    id: 1,
+  },
+  {
+    name: "typemaster-lp",
+    title: "Typemaster Landing Page",
+    level: "Junior",
+    internalhost: true,
+    id: 1,
+  },
+  {
+    name: "github-user-search-app",
+    title: "Github User Search App (ReactJS)",
+    level: "Junior",
+    internalhost: false,
+    id: 17,
+    url: "https://gituser-omega.vercel.app/",
+    repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/github-user-search-app",
+  },
+  {
     name: "bmi-calculator",
     title: "BMI calculator",
     level: "Junior",

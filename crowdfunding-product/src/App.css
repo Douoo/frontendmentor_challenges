@@ -10,7 +10,7 @@ header {
   .header {
     background-image: url('./assets/image-hero-desktop.jpg');
     height: 25rem;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
   }
 }
 
@@ -115,76 +115,6 @@ header {
 }
 
 
-.container {
-  width: min(730px, 85%);
-  margin-inline: auto;
-}
-
-.clr-primary {
-  color: var(--clr-primary);
-}
-
-.clr-dark {
-  color: var(--clr-neutral-900);
-}
-
-.bg-white {
-  background-color: var(--clr-neutral-100);
-}
-
-.card {
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 0.06rem solid rgba(0, 0, 0, 0.05);
-  background-color: var(--clr-neutral-100);
-}
-
-.mb-16 {
-  margin-bottom: 1rem;
-}
-
-.mb-24 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-32 {
-  margin-bottom: 2rem;
-}
-
-.heading-lg {
-  font-size: var(--fs-heading-lg);
-  line-height: 2.45rem;
-}
-
-.heading-md {
-  font-size: var(--fs-heading-md);
-}
-
-.heading-sm {
-  font-size: var(--fs-heading-sm);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-bold {
-  font-weight: var(--fw-bold);
-}
-
-.btn {
-  font-size: var(--fs-nav);
-  font-weight: var(--fw-bold);
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: var(--clr-primary);
-  color: var(--clr-neutral-100);
-}
 
 .bookmark {
   font-weight: var(--fw-bold);
@@ -209,17 +139,6 @@ header {
   fill: var(--clr-neutral-100);
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-
 
 .hero {
   position: relative;
@@ -233,9 +152,25 @@ header {
   left: 45%;
 }
 
+.hero__content {
+  margin-block: 1rem;
+}
+
+.hero__content .heading-md {
+  margin-bottom: 1rem;
+}
+
 @media(min-width: 45rem) {
   .hero {
     top: 14rem;
+  }
+
+  .hero__content {
+    margin-block: 1.75rem 3rem;
+  }
+
+  .hero__content .heading-md {
+    margin-bottom: 1rem;
   }
 }
 
@@ -256,9 +191,23 @@ header {
   text-align: center;
 }
 
-.fundraise__status div:not(:first-child) {
-  border-bottom: 0.25px solid var(--clr-neutral-300);
+@media(max-width:45rem) {
+  .fundraise__status div {
+    position: relative;
+    padding-block: 0rem 1rem;
+  }
+
+  .fundraise__status div:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 50%;
+    margin-inline: auto;
+    border-bottom: 0.25px solid var(--clr-neutral-300);
+  }
 }
+
+
 
 @media(min-width: 45rem) {
   .fundraise__status {
@@ -302,45 +251,10 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.pledge__plan,
-.pledge__plan--modal {
-  padding: 1.5rem;
-  border: 0.06rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.5rem;
-}
-
-.pledge__plan *+* {
-  margin-bottom: 1rem;
-}
-
-.pledge__flow {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
-@media(min-width: 45rem) {
-  .pledge__flow {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
 .pledges--modal {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.pledge__plan--modal {
-  display: grid;
-  grid-template-areas: 'radio label'
-    'radio description';
-  place-items: start;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 
@@ -353,4 +267,95 @@ header {
   cursor: pointer;
   fill: var(--clr-neutral-900);
   opacity: 0.4;
+}
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: min(730px, 85%);
+  margin-inline: auto;
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-dark {
+  color: var(--clr-neutral-900);
+}
+
+.bg-white {
+  background-color: var(--clr-neutral-100);
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.06rem solid rgba(0, 0, 0, 0.05);
+  background-color: var(--clr-neutral-100);
+}
+
+.mb-16 {
+  margin-bottom: 1rem;
+}
+
+.mt-24 {
+  margin-top: 1.5rem;
+}
+
+.mt-28 {
+  margin-top: 1.75rem;
+}
+
+.mb-24 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-32 {
+  margin-bottom: 2rem;
+}
+
+
+.heading-lg {
+  font-size: var(--fs-heading-lg);
+  line-height: 2.45rem;
+}
+
+.heading-md {
+  font-size: var(--fs-heading-md);
+}
+
+.heading-sm {
+  font-size: var(--fs-heading-sm);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: var(--fw-bold);
+}
+
+.btn {
+  font-size: var(--fs-nav);
+  font-weight: var(--fw-bold);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-100);
 }

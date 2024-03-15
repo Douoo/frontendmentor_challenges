@@ -176,7 +176,7 @@ body {
 
 .btn {
     font-weight: var(--fw-semi-bold);
-    padding: 0.75rem 0.5rem;
+    padding: 0.75rem 1rem;
     border: none;
     border-radius: .5rem;
     text-transform: uppercase;
@@ -297,10 +297,12 @@ header {
 
 @media(min-width: 48rem) {
     .hero {
+        position: relative;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
+
 
     .showcase {
         text-align: start;

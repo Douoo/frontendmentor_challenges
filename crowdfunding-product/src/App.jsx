@@ -111,7 +111,8 @@ function App() {
         <header className="header">
           <div className={`nav__wrapper ${isNavOpen ? "overlay" : ""}`}>
             <a className="nav-logo" href="#">
-              <img src={logo} role="presentation" />
+              <img src={logo} alt="crowdfund logo" />
+              <span className="visually-hidden">Navigation menu</span>
             </a>
             <IconButton
               className={`nav-toggle ${isNavOpen ? "visible--fixed" : ""}`}
@@ -143,13 +144,16 @@ function App() {
               <img
                 className="hero__logo"
                 src={logoMasterCraft}
-                role="presentation"
+                alt="mastercraft logo"
               />
-              <h1 className="heading-md">Mastercraft Bamboo Monitor Riser</h1>
-              <p>
-                A beautiful & handcrafted monitor stand to reduce neck and eye
-                strain.
-              </p>
+              <div className="hero__content">
+                <h1 className="heading-md">Mastercraft Bamboo Monitor Riser</h1>
+                <p>
+                  A beautiful & handcrafted monitor stand to reduce neck and eye
+                  strain.
+                </p>
+              </div>
+
               <Flex
                 className="container"
                 gap="0.6rem"
