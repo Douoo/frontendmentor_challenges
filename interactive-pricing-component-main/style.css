@@ -305,7 +305,7 @@ input[type="checkbox"] {
 
 .pricing {
     position: relative;
-    bottom: 5rem;
+    bottom: 7rem;
     display: grid;
     place-items: center;
 }
