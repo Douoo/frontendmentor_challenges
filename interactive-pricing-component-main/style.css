@@ -279,6 +279,7 @@ input[type="checkbox"] {
     margin-inline: auto;
     display: grid;
     place-items: center;
+    bottom: 2rem;
 }
 
 .header::before {
