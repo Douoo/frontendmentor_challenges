@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Interactive pricing component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-block: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container text-center">
+        <h1 class="heading-md">Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+    </header>
+    <main class="container">
+      <div class="pricing | card">
+        <div class="pricing__header">
+          <p class="text-caption clr-neutral-700">
+            <span id="pageViews"></span>K Pageviews
+          </p>
+          <span class="cost | text-md clr-neutral-700">
+            <h2 class="heading-lg clr-neutral-900" data-cost>$16</h2>
+            / month</span
+          >
+          <div class="range-slider">
+            <input
+              class="range-slide"
+              type="range"
+              min="7"
+              max="200"
+              value="100"
+              id="trafficRange"
+            />
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="pricing__plan clr-neutral-700 text-sm">
+          <small>Monthly Billing</small>
+          <input type="checkbox" name="billingPeriod" id="billingPeriod" />
+          <label class="toggle_btn" for="billingPeriod"> </label>
+
+          <small>Yearly Billing <span class="label">25%</span></small>
+        </div>
+
+        <div class="pricing__footer text-sm">
+          <ul class="pricing__features clr-neutral-700">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button class="btn btn-primary">Start my trial</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/douoo">Douoo</a>. Check my other
+      works
+      <a href="https://douoo.github.io/frontendmentor_challenges/">here</a>
+    </div>
+  </body>
+  <script src="script.js" type="text/javascript"></script>
+</html>
