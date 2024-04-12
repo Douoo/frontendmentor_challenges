@@ -447,11 +447,12 @@ h4 {
 @media(min-width: 60rem) {
     .header {
         /* place-items: start; */
+        position: relative;
         height: 35rem;
-        /* padding-block: 7.75rem 12.625rem; */
         background-image: url('assets/bg-hero-squiggle.svg');
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        top: 3rem;
     }
 
     .nav-logo {
@@ -485,6 +486,7 @@ h4 {
     .feature__list {
         display: grid;
         grid-auto-flow: column;
+        padding-block: 7.5rem 10rem;
     }
 
     .feature__list li:nth-child(even) {
