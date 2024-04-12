@@ -487,6 +487,8 @@ h4 {
         display: grid;
         grid-auto-flow: column;
         padding-block: 7.5rem 10rem;
+        text-align: start;
+        gap: 2.5rem;
     }
 
     .feature__list li:nth-child(even) {
