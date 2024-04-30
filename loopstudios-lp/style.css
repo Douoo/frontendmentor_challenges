@@ -438,7 +438,15 @@ h4 {
     text-transform: uppercase;
 }
 
+.clr-lead {
+    color: var(--clr-neutral-700);
+}
+
 .clr-dark {
+    color: var(--clr-neutral-800);
+}
+
+.clr-black {
     color: var(--clr-neutral-900);
 }
 
@@ -512,6 +520,7 @@ h4 {
 
     #about {
         position: relative;
+        margin-block: 10rem 11.25rem;
     }
 
     #about .card {
@@ -528,6 +537,7 @@ h4 {
             'categories categories';
         justify-content: space-between;
         gap: 1.5rem;
+        margin-bottom: 13.5rem;
     }
 
     #portfolio .card {
