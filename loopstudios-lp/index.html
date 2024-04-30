@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="navbar | container">
+        <a class="nav-brand" href="/"
+          ><img src="images/logo.svg" alt="loopstudios logo"
+        /></a>
+        <button class="nav-toggle">
+          <span class="icon-menu"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="hero__content | heading-lg clr-white text-uppercase">
+          Immersive experiences that deliver
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-96">
+      <section id="about" class="mb-96">
+        <picture>
+          <source
+            media="(min-width:650px)"
+            srcset="images/desktop/image-interactive.jpg"
+          />
+          <source
+            media="(min-width:465px)"
+            srcset="images/mobile/image-interactive.jpg"
+          />
+          <img src="images/mobile/image-interactive.jpg" alt="VR interaction" />
+        </picture>
+        <div class="card bg-white mt-48">
+          <h2 class="heading-md text-uppercase mb-16">
+            The leader in interactive VR
+          </h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h3 class="heading-md text-uppercase">Our creations</h3>
+        <a class="btn btn-outline" href="#">See all</a>
+        <ul class="categories" role="list">
+          <li class="card card--earth">
+            <a class="text-uppercase">Deep earth</a>
+          </li>
+          <li class="card card--arcade">
+            <a class="text-uppercase">Night arcade</a>
+          </li>
+          <li class="card card--soccer">
+            <a class="text-uppercase">Soccer team VR</a>
+          </li>
+          <li class="card card--grid">
+            <a class="text-uppercase">The grid</a>
+          </li>
+          <li class="card card--above">
+            <a class="text-uppercase">From up above VR</a>
+          </li>
+          <li class="card card--borealis">
+            <a class="text-uppercase">Pocket borealis</a>
+          </li>
+          <li class="card card--curiosity">
+            <a class="text-uppercase">The curiosity</a>
+          </li>
+          <li class="card card--fisheye">
+            <a class="text-uppercase">Make it fisheye</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="bg-dark clr-white">
+      <div class="footer-container">
+        <div class="">
+          <img src="images/logo.svg" alt="loopstudios logo" />
+          <ul class="nav--footer" role="list">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="social-links">
+            <li>
+              <a href="#"
+                ><img src="images/icon-facebook.svg" alt="facebook icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/icon-instagram.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+          <p>© 2024 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
