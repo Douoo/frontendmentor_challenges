@@ -342,15 +342,15 @@ h4 {
     inset: 0;
     background: rgba(255, 255, 255, 0.75);
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.2s;
 }
 
 #portfolio .card:hover a {
-    color: var(--clr-neutral-800) !important;
+    color: var(--clr-neutral-900) !important;
 }
 
 #portfolio .card:hover::before {
-    transition: opacity 0.5s;
+    transition: opacity 0.2s;
     opacity: 1;
 }
 

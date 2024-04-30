@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Src Code](https://douoo.github.io/frontendmentor_challenges/loopstudios-lp/)
-- Live Site URL: [Add live site URL here](https://douoo.github.io/frontendmentor_challenges/loopstudios-lp)
+- Solution URL: [Src Code](https://github.com/Douoo/frontendmentor_challenges/tree/main/loopstudios-lp)
+- Live Site URL: [Live Demo](https://douoo.github.io/frontendmentor_challenges/loopstudios-lp)
 
 ## My process
 
