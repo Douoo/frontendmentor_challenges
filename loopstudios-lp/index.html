@@ -45,10 +45,14 @@
         <a class="nav-brand" href="/"
           ><img src="images/logo.svg" alt="loopstudios logo"
         /></a>
-        <button class="nav-toggle">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-list"
+        >
           <span class="icon-menu"></span>
         </button>
-        <nav class="nav">
+        <nav id="menu-list" aria-labelledby="primary-navigation" class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
@@ -79,7 +83,7 @@
           <img src="images/mobile/image-interactive.jpg" alt="VR interaction" />
         </picture>
         <div class="card bg-white mt-48">
-          <h2 class="heading-md text-uppercase clr-dark mb-16">
+          <h2 class="heading-md text-uppercase mb-16">
             The leader in interactive VR
           </h2>
           <p class="clr-lead">
@@ -126,7 +130,11 @@
       <div class="footer-container">
         <div class="">
           <img src="images/logo.svg" alt="loopstudios logo" />
-          <ul class="nav--footer" role="list">
+          <ul
+            class="nav--footer"
+            role="list"
+            aria-labelledby="footer-navigation"
+          >
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
@@ -135,36 +143,39 @@
           </ul>
         </div>
         <div>
-          <ul class="social-links">
+          <ul class="social-links" aria-label="social-links">
             <li>
               <a href="#"
                 ><img src="images/icon-facebook.svg" alt="facebook icon"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" aria-label="Twitter"
                 ><img src="images/icon-twitter.svg" alt="twitter"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" aria-label="Pinterest"
                 ><img src="images/icon-pinterest.svg" alt="pinterest"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" aria-label="Instagram"
                 ><img src="images/icon-instagram.svg" alt="instagram"
               /></a>
             </li>
           </ul>
-          <p>© 2024 Loopstudios. All rights reserved.</p>
+          <p class="clr-lead">© 2024 Loopstudios. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io/profile/douoo" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/profile/douoo"
+        target="_blank"
+        aria-describedby="Frontend Mentor Website"
         >Frontend Mentor</a
       >. Coded by <a href="#">Douoo</a>.
     </div>
