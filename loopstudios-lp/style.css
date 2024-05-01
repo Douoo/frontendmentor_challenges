@@ -222,8 +222,7 @@ h4 {
     .nav-toggle .icon-menu {
         display: inline-block;
         background-color: var(--clr-neutral-100);
-        border-radius: 100px;
-        height: 5px;
+        height: 3px;
         position: relative;
         transition: all 0.25s;
         width: 30px;
@@ -233,8 +232,7 @@ h4 {
     .nav-toggle .icon-menu::after {
         content: "";
         background-color: var(--clr-neutral-100);
-        border-radius: 100px;
-        height: 5px;
+        height: 3px;
         left: 0px;
         position: absolute;
         transition: all 0.25s;
@@ -242,11 +240,11 @@ h4 {
     }
 
     .nav-toggle .icon-menu::before {
-        top: -10px;
+        top: -8px;
     }
 
     .nav-toggle .icon-menu::after {
-        bottom: -10px;
+        bottom: -8px;
     }
 
     .nav-toggle.toggled .icon-menu {
