@@ -122,7 +122,7 @@ h4 {
 
 .hero {
     position: relative;
-    background: url(images/mobile/image-hero.jpg);
+    background: url(images/mobile/image-hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40rem;
