@@ -1,36 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+    <title>Officelite coming soon site</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      optgroup[label="Premium Packs"] option {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="bg-vertical">
+    <header class="header">
+      <div class="navbar">
+        <a href="/" class="nav-logo"
+          ><img src="assets/shared/logo.svg" alt="Officelite logo"
+        /></a>
+      </div>
+    </header>
+    <main class="container">
+      <section class="signup">
+        <div class="text-sm-center">
+          <h1 class="heading-lg clr-dark">Work smarter. Save time.</h1>
+          <p class="clr-lead">
+            Easily manage your projects. Get on the list and receive in-app
+            perks available only to early subscribers. We are moving into final
+            development and getting ready for official launch soon.
+          </p>
+        </div>
+        <div class="count-down">
+          <h2 class="text-uppercase">
+            Coming <span class="clr-primary" data-release=""></span>
+          </h2>
+          <div class="timer timer--light">
+            <div class="counter"><span class="days">47</span>Days</div>
+            <div class="counter"><span class="hrs">07</span>Hours</div>
+            <div class="counter"><span class="min">56</span>Min</div>
+            <div class="counter"><span class="sec">14</span>Sec</div>
+          </div>
+        </div>
+        <div class="form-container | card card-light" id="registrationForm">
+          <form class="formEl" action="">
+            <div class="form-control">
+              <label for="name"></label>
+              <input
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <small class="error-text"></small>
+            </div>
+            <div class="form-control">
+              <label for="email"></label>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                required
+              />
+              <small class="error-text"></small>
+            </div>
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                id="dropdownPlanButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Select plan
+              </button>
+              <ul class="dropdown-list text-bold">
+                <li class="dropdown-item">
+                  <span class="clr-dark">Basic Pack</span> Free
+                </li>
+                <li class="dropdown-item">
+                  <span class="clr-dark">Pro Pack</span> $9.99
+                </li>
+                <li class="dropdown-item">
+                  <span class="clr-dark">Ultimate Pack</span> $19.99
+                </li>
+              </ul>
+            </div>
+            <div class="form-control">
+              <label for="phone"></label>
+              <input
+                name="phone"
+                id="phone"
+                type="tel"
+                placeholder="Phone Number"
+                required
+              />
+              <small class="error-text"></small>
+            </div>
+            <div class="form-control">
+              <label for="company"></label>
+              <input
+                name="company"
+                id="company"
+                type="text"
+                placeholder="Company"
+                required
+              />
+              <small class="error-text"></small>
+            </div>
+            <button
+              class="btn btn-primary"
+              type="submit"
+              aria-label="subscribe to list"
+            >
+              Get on the list
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+    <!-- 47 Days 07 Hours 56 Min 14 Sec Name Email Address Basic Pack Free Basic Pack
+    Free Pro Pack $9.99 Ultimate Pack $19.99 Phone Number Company Get on the
+    list -->
+  </body>
+  <script src="script.js"></script>
 </html>

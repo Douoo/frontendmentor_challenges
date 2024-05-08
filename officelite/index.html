@@ -20,16 +20,20 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <div class="container">
+  <body class="bg-horizontal">
+    <header class="header">
+      <div class="navbar">
         <a href="#" class="nav-logo"
           ><img src="assets/shared/logo.svg" alt="Officelite logo"
         /></a>
       </div>
       <div class="hero | container">
-        <img src="assets/home/illustration-charts.svg" alt="charts" />
-        <div>
+        <img
+          class="hero__img"
+          src="assets/home/illustration-charts.svg"
+          alt="charts"
+        />
+        <div class="hero__content | text-sm-center">
           <h1 class="heading-md clr-dark">
             A simple solution to complex tasks is coming soon
           </h1>
@@ -38,69 +42,84 @@
             projects. Officelite is the new collaboration platform built with an
             intuitive interface to improve productivity.
           </p>
-          <button>Get Started</button>
+          <a href="/sign-up.html" class="btn btn-primary elevated"
+            >Get Started</a
+          >
         </div>
       </div>
     </header>
 
     <main class="container">
-      <ul>
+      <ul class="pricing" role="list">
         <li>
-          <div class="card card-light">
-            <p>Basic</p>
-            <h2>Free</h2>
-            <p>Up to 5 users for free</p>
-            <ul>
+          <div class="pricing__plan | card card-light card-elevated">
+            <div>
+              <p>Basic</p>
+              <h2 class="heading-lg text-bold clr-dark">Free</h2>
+              <p>Up to 5 users for free</p>
+            </div>
+            <ul class="pricing__feature">
               <li>Basic document collaboration</li>
               <li>2 gb storage</li>
               <li>Great security and support</li>
             </ul>
-            <button class="btn btn-primary">Try for Free</button>
+            <button class="btn btn-secondary">Try for Free</button>
           </div>
         </li>
         <li>
-          <div class="card card-primary">
-            <p>Pro</p>
-            <h2>$9.99</h2>
-            <p>Per user, billed monthly</p>
-            <ul>
+          <div class="pricing__plan | card card-primary clr-white">
+            <div>
+              <p class="text-bold">Pro</p>
+              <h2 class="heading-lg">$9.99</h2>
+              <p>Per user, billed monthly</p>
+            </div>
+
+            <ul class="pricing__feature clr-white">
               <li>All essential integrations</li>
               <li>50 gb storage</li>
               <li>More control and insights</li>
             </ul>
-            <button class="btn btn-primary">Try for Free</button>
+            <button class="btn btn-light">Try for Free</button>
           </div>
         </li>
         <li>
-          <div class="card card-light">
-            <p>Ultimate</p>
-            <h2>$19.99</h2>
-            <p>Per user, billed monthly</p>
-            <ul>
+          <div class="pricing__plan | card card-light">
+            <div>
+              <p class="text-bold clr-dark">Ultimate</p>
+              <h2 class="heading-lg">$19.99</h2>
+              <p>Per user, billed monthly</p>
+            </div>
+
+            <ul class="pricing__feature">
               <li>Robust work management</li>
               <li>100 gb storage</li>
               <li>VIP support</li>
             </ul>
-            <button class="btn btn-primary">Try for Free</button>
+            <button class="btn btn-secondary">Try for Free</button>
           </div>
         </li>
       </ul>
     </main>
 
     <footer>
-      <div class="container">
+      <div class="footer clr-white">
         <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
 
-        <h3>Coming 4 Nov 2020</h3>
+        <h3 class="text-uppercase">
+          Coming <span class="clr-primary" data-release=""></span>
+        </h3>
         <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-        <div class="count-down">
-          <div class="counter"><span>47</span>Days</div>
-          <div class="counter"><span>07</span>Hours</div>
-          <div class="counter"><span>56</span>Min</div>
-          <div class="counter"><span>14</span>Sec</div>
+        <div class="flow-row">
+          <div class="timer timer--dark">
+            <div class="counter"><span>47</span>Days</div>
+            <div class="counter"><span>07</span>Hours</div>
+            <div class="counter"><span>56</span>Min</div>
+            <div class="counter"><span>14</span>Sec</div>
+          </div>
+          <button class="btn btn-primary">Get Started</button>
         </div>
-        <button class="btn btn-primary">Get Started</button>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
