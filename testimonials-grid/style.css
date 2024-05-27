@@ -124,6 +124,13 @@ body {
     margin-block: 3rem;
 }
 
+[data-testimony-first] {
+    grid-area: first;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 3rem;
+}
+
 @media (min-width: 45rem) {
 
     .testimonies {
