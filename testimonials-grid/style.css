@@ -4,6 +4,7 @@
     --clr-neutral-900: hsl(219, 29%, 14%);
     --clr-neutral-700: hsl(217, 19%, 35%);
     --clr-neutral-200: rgb(207, 207, 207);
+    --clr-surface: hsl(213, 44%, 95%);
     --clr-neutral-100: hsl(0, 0%, 100%);
 
     --ff-default: "Barlow Semi Condensed", sans-serif;
@@ -93,6 +94,7 @@ select {
 body {
     font-family: var(--ff-default);
     font-weight: var(--fw-regular);
+    background-color: var(--clr-surface);
 }
 
 .circle-avatar {
