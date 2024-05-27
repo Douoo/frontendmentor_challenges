@@ -53,14 +53,14 @@ Making a custom dropdown button
 
 ### Useful resources
 
-- [Making custom dropdown with <select></select>](https://blog.logrocket.com/creating-custom-select-dropdown-css/#custom-select-dropdown-scratch-css-javascript) - This helped me for creating a custom drodown button with accessibility feature
+- [Creating a custom `<select>` dropdown with CSS](https://blog.logrocket.com/creating-custom-select-dropdown-css/#custom-select-dropdown-scratch-css-javascript) - This helped me for creating a custom drodown button with accessibility feature
 
 
 ## Author
 
 - Frontend Mentor - [@Douoo](https://www.frontendmentor.io/profile/douoo)
 - Instagram - [@Douoo](https://www.instagram.com/douooo/)
-- Twitter - [@yourusername](https://www.twitter.com/douoo_b)
+- Twitter - [@Douoo](https://www.twitter.com/douoo_b)
 
 
 ## Acknowledgments
