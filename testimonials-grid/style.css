@@ -121,10 +121,21 @@ body {
 }
 
 .testimonies {
+    width: 100%;
     display: grid;
     gap: 1rem;
+    grid-template-areas: 'first'
+        'second'
+        'third'
+        'fourth'
+        'fifth';
     margin-block: 3rem;
 }
+
+.testimonies .card {
+    width: 100%;
+}
+
 
 [data-testimony-first] {
     grid-area: first;
@@ -133,32 +144,29 @@ body {
     background-position: top right 3rem;
 }
 
-@media (min-width: 45rem) {
+[data-testimony-second] {
+    grid-area: second;
+}
+
+[data-testimony-third] {
+    grid-area: third;
+}
+
+[data-testimony-fourth] {
+    grid-area: fourth;
+}
+
+[data-testimony-five] {
+    grid-area: fifth;
+}
+
+@media (min-width: 60rem) {
 
     .testimonies {
         grid-template-areas: 'first first second fifth'
             'third fourth fourth fifth';
     }
 
-    [data-testimony-first] {
-        grid-area: first;
-    }
-
-    [data-testimony-second] {
-        grid-area: second;
-    }
-
-    [data-testimony-third] {
-        grid-area: third;
-    }
-
-    [data-testimony-fourth] {
-        grid-area: fourth;
-    }
-
-    [data-testimony-five] {
-        grid-area: fifth;
-    }
 
 }
 
