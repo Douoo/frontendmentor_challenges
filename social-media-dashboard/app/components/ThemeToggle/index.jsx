@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState(global.window?.__theme || "light");
+  const [theme, setTheme] = useState(global.window?.__theme || "dark");
 
   const toggleTheme = () => {
     global.window?.__setPreferredTheme(theme === "light" ? "dark" : "light");
