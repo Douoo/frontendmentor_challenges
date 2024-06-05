@@ -17,13 +17,13 @@ class SocialMedia{
     switch (this.platform) {
       case "facebook":
       case "twitter":
-        return "border-[#178FF5]";
+        return "border-[#178FF5] border-t-4";
       case "instagram":
-        return "bg-gradient-to-br from-#DF4896 via-#EE877E to-#FDC366";
+        return "ig-border";
       case "youtube":
-        return "border-[#C4032B]";
+        return "border-[#C4032B] border-t-4";
       default:
-        return "border-[#178FF5]";
+        return "border-[#178FF5] border-t-4";
     }
   };
     static getInsight(insight: ProfileInsight): InsightData {

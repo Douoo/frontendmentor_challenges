@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState(global.window?.__theme || "dark");
+  const [theme, setTheme] = useState(global.window?.__theme || "light");
 
   const toggleTheme = () => {
     global.window?.__setPreferredTheme(theme === "light" ? "dark" : "light");
@@ -16,7 +16,11 @@ function ThemeToggle() {
     <div className="flex gap-4 justify-between items-center">
       <span>Dark Mode</span>
       <label className={styles.switch}>
-        <input type="checkbox" onChange={toggleTheme} />
+        <input
+          type="checkbox"
+          onChange={toggleTheme}
+          checked={theme === "dark"}
+        />
         <span className={`${styles.slider} ${styles.round}`}></span>
       </label>
     </div>

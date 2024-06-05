@@ -20,7 +20,7 @@ function StatCard({
   const insightData = SocialMedia.getInsight(insight);
   return (
     <Card
-      className={`${socialPlatform.getColor()} | group grid place-items-center gap-6 border-t-4  rounded-xl p-8`}
+      className={`${socialPlatform.getColor()}  | group grid place-items-center gap-6 rounded-xl p-8`}
     >
       <div className="flex items-center gap-1">
         <Image
