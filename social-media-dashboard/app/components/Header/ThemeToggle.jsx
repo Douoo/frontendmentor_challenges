@@ -1,5 +1,5 @@
 "use client";
-import styles from "./index.module.css";
+import styles from "./Header.module.css";
 import { useState, useEffect } from "react";
 
 function ThemeToggle() {

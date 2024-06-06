@@ -1,0 +1,296 @@
+:root {
+    --clr-primary: hsl(240, 38%, 20%);
+    --clr-neutral-200: hsl(240, 18%, 77%);
+    --clr-neutral-100: rgb(255, 255, 255);
+
+    --ff-default: "Inter", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 500;
+    --fw-bold: 700;
+
+    --fs-100: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-400: 2rem;
+
+    --fs-quote: var(--fs-200);
+    --fs-sm: var(--fs-100);
+}
+
+@media(min-width: 45rem) {
+    :root {
+        --fs-quote: var(--fs-400);
+        --fs-sm: var(--fs-300)
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: var(--ff-default);
+    display: grid;
+    place-items: center;
+}
+
+body.pattern {
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left bottom;
+}
+
+.flow {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media(max-width: 60rem) {
+    .flow {
+        flex-direction: column;
+    }
+}
+
+.container {
+    width: min(1110px, 90%);
+    margin-inline: auto;
+}
+
+.slider {
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    height: 620px;
+    transition: transform 1s;
+}
+
+.slide__img {
+    position: relative;
+    height: 350px;
+    display: grid;
+    place-items: center;
+}
+
+.slide__img .avatar {
+    width: 255px;
+    height: 255px;
+    margin-inline: auto;
+}
+
+.slide__img::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    inset: 0;
+    z-index: -1;
+}
+
+.slide__btns {
+    position: absolute;
+    bottom: 49%;
+    right: 40%;
+    z-index: 10;
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    padding: 0.45rem;
+    border-radius: 1.75rem;
+    background: var(--clr-neutral-100);
+    box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.1);
+}
+
+.slide__btns button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.testimony__text {
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 30%;
+    padding-block: 1rem;
+    text-align: center;
+}
+
+@media(min-width: 60rem) {
+    .testimony {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas: 'text image';
+        gap: 1.5rem;
+        place-items: center;
+    }
+
+    .slide__img {
+        height: 100%;
+    }
+
+    .slide__img .avatar {
+        position: relative;
+        width: 420px;
+        right: 1.5rem;
+        height: 420px;
+        object-fit: contain;
+    }
+
+    .slide__img::before {
+        background-size: 100%;
+        top: 10rem;
+    }
+
+    .testimony__text {
+        position: relative;
+        top: 2rem;
+        left: 6rem;
+        grid-area: text;
+        text-align: start;
+    }
+
+    .slide__btns {
+        right: 30%;
+        bottom: 15%;
+    }
+}
+
+.text-quote {
+    font-size: var(--fs-quote);
+    line-height: 1.5rem;
+}
+
+.text-light {
+    font-weight: var(--fw-light);
+}
+
+.text-bold {
+    font-weight: var(--fw-bold);
+}
+
+.text-sm {
+    font-size: var(--fs-sm);
+    line-height: 1.25rem;
+}
+
+.clr-primary {
+    color: var(--clr-primary);
+}
+
+.clr-neutral-200 {
+    color: var(--clr-neutral-200);
+}
+
+.text-style-normal {
+    font-style: normal;
+}
+
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-32 {
+    margin-bottom: 2rem;
+}
+
+.mb-64 {
+    margin-bottom: 4rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media(min-width: 45rem) {
+    .text-quote {
+        line-height: 2.5rem;
+    }
+
+    .text-sm {
+        line-height: 2.375rem;
+    }
+}

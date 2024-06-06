@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Coding Bootcamp Testimonials Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="pattern">
+    <main class="container">
+      <div class="slider">
+        <div class="slide__btns">
+          <button data-left="">
+            <img
+              aria-hidden="true"
+              src="images/icon-prev.svg"
+              alt="icon-left"
+            /><span class="visually-hidden">Previous</span>
+          </button>
+          <button data-right="">
+            <img
+              src="images/icon-next.svg"
+              aria-hidden="true"
+              alt="icon-right"
+            /><span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="slide | testimony">
+          <div class="slide__img mb-32">
+            <img
+              class="avatar"
+              src="images/image-tanya.jpg"
+              alt="Tanya Sinclair"
+            />
+          </div>
+
+          <blockquote class="testimony__text | clr-primary">
+            <p class="text-quote text-light mb-20">
+              “ I’ve been interested in coding for a while but never taken the
+              jump, until now. I couldn’t recommend this course enough. I’m now
+              in the job of my dreams and so excited about the future. ”
+            </p>
+            <footer class="text-sm | flow">
+              <span class="text-bold">Tanya Sinclair</span>
+              <cite class="text-light clr-neutral-200 text-style-normal"
+                >UX Engineer</cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+        <div class="slide | testimony">
+          <div class="slide__img mb-32">
+            <img
+              class="avatar"
+              src="images/image-john.jpg"
+              alt="John Tarkpor"
+            />
+            <!-- <div class="slide__btns">
+              <button data-left="">
+                <img
+                  aria-hidden="true"
+                  src="images/icon-prev.svg"
+                  alt="icon-left"
+                /><span class="visually-hidden">Previous</span>
+              </button>
+              <button data-right="">
+                <img
+                  src="images/icon-next.svg"
+                  aria-hidden="true"
+                  alt="icon-right"
+                /><span class="visually-hidden">Next</span>
+              </button>
+            </div> -->
+          </div>
+          <blockquote class="testimony__text | clr-primary">
+            <p class="text-quote text-light mb-20">
+              “ If you want to lay the best foundation possible I’d recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer. ”
+            </p>
+            <footer class="text-sm | flow">
+              <span class="text-bold">John Tarkpor</span>
+              <cite class="text-light clr-neutral-200 text-style-normal"
+                >Junior Front-end Developer</cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
