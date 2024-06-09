@@ -1,0 +1,15 @@
+{
+  "name": "insure-lp",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

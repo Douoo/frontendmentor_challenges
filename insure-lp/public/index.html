@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Insure landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div
+        class="nav-wrapper | py-4 md:py-6 relative flex items-center justify-between"
+      >
+        <a href="#">
+          <img src="images/logo.svg" alt="Insure logo" />
+        </a>
+        <button
+          class="nav-toggle | md:hidden relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- Icon when menu is closed  -->
+          <svg
+            class="icon-hamburger | block"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#FFF"
+                stroke="#2C2830"
+                stroke-width="1.5"
+                d="M.75.75h30.5v30.5H.75z"
+              />
+              <g fill="#2C2830">
+                <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
+              </g>
+            </g>
+          </svg>
+          <!-- Icon when menu is open -->
+          <svg
+            class="icon-close | hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#FFF"
+                stroke="#2C2830"
+                stroke-width="1.5"
+                d="M.75.75h30.5v30.5H.75z"
+              />
+              <g fill="#2C2830">
+                <path d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z" />
+                <path d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z" />
+              </g>
+            </g>
+          </svg>
+        </button>
+        <nav class="nav | hidden md:block">
+          <ul
+            class="clr-neutral-800 flex flex-col sm:flex-row gap-6 justify-stretch uppercase"
+          >
+            <li>
+              <a
+                class="hover:text-[var(--clr-neutral-900)] font-semibold"
+                href="#"
+              >
+                How we work</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[var(--clr-neutral-900)] font-semibold"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-[var(--clr-neutral-900)] font-semibold"
+                href="#"
+                >Account</a
+              >
+            </li>
+            <li>
+              <a class="btn btn-outline btn-outline-secondary" href="#"
+                >View plans</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="hero bg-primary-900 clr-neutral-100">
+        <div class="hero__container | relative md:grid grid-flow-col">
+          <picture class="md:absolute right-0 top-[5rem]">
+            <source
+              media="(min-width: 60rem)"
+              srcset="images/image-intro-desktop.jpg"
+            />
+            <img
+              class="w-full"
+              src="images/image-intro-mobile.jpg"
+              alt="hero"
+            />
+          </picture>
+
+          <div
+            class="text-center sm:text-left py-6 sm:py-32 mb-10 md:max-w-[540px] z-50"
+          >
+            <hr class="hidden md:block border-t w-1/4 mb-16" />
+            <h1 class="relative text-lg mb-4 mr-auto">
+              Humanizing your insurance.
+            </h1>
+            <p class="mb-8">
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <button class="btn btn-outline btn-outline-primary">
+              View plans
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="features | container text-center md:text-left mt-[305px] mb-[160px]"
+      >
+        <hr class="hidden sm:block border-t w-1/4 mb-16 border-[#C396C6]" />
+        <h2 class="text-lg mb-20">We’re different</h2>
+        <div class="md:flex gap-6">
+          <div
+            class="mb-14 grid place-items-center md:place-items-start mx-auto md:ml-auto"
+          >
+            <img
+              class="mb-8"
+              src="images/icon-snappy-process.svg"
+              alt="blazing"
+            />
+            <h3 class="text-sm mb-4">Snappy Process</h3>
+            <p class="clr-neutral-800">
+              Our application process can be completed in minutes, not hours.
+              Don’t get stuck filling in tedious forms.
+            </p>
+          </div>
+          <div
+            class="mb-14 grid place-items-center md:place-items-start mx-auto md:ml-auto"
+          >
+            <img
+              class="mb-8"
+              src="images/icon-affordable-prices.svg"
+              alt="Price"
+            />
+            <h3 class="text-sm mb-4">Affordable Prices</h3>
+            <p class="clr-neutral-800">
+              We don’t want you worrying about high monthly costs. Our prices
+              may be low, but we still offer the best coverage possible.
+            </p>
+          </div>
+          <div
+            class="mb-14 grid place-items-center md:place-items-start mx-auto md:ml-auto"
+          >
+            <img class="mb-8" src="images/icon-people-first.svg" alt="" />
+            <h3 class="text-sm mb-4">People First</h3>
+            <p class="clr-neutral-800">
+              Our plans aren’t full of conditions and clauses to prevent
+              payouts. We make sure you’re covered when you need it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="how-we-work | bg-primary-900 clr-neutral-100 | container mt-16 mb-[150px] grid"
+      >
+        <div
+          class="container w-[90%] mx-auto py-8 flex flex-col md:flex-row gap-6 justify-between"
+        >
+          <h2 class="text-md text-center md:text-left max-w-[600px]">
+            Find out more about how we work
+          </h2>
+          <button class="btn btn-outline btn-outline-primary self-center z-10">
+            How we work
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer | bg-neutral-100 py-16">
+      <div class="container max-w-5xl w-[90%] mx-auto text-center md:text-left">
+        <div
+          class="my-20 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10 border-b pb-6"
+        >
+          <a href="#">
+            <img
+              class="h-5 w-[120px]"
+              src="images/logo.svg"
+              alt="Insure logo"
+            />
+          </a>
+          <div>
+            <ul class="flex gap-4 items-center">
+              <li>
+                <a href="#"
+                  ><img src="images/icon-facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon-twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon-pinterest.svg" alt="pinterest"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon-instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="relative md:flex justify-between z-20">
+          <div class="mb-8">
+            <span class="clr-neutral-800 block mb-9 uppercase font-bold">
+              Our company
+            </span>
+            <ul>
+              <li><a class="hover:underline" href="#">How we work</a></li>
+              <li><a class="hover:underline" href="#">Why Insure?</a></li>
+              <li><a class="hover:underline" href="#">View plans</a></li>
+              <li><a class="hover:underline" href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <span class="clr-neutral-800 block mb-9 uppercase font-bold"
+              >Help Me</span
+            >
+            <ul>
+              <li><a class="hover:underline" href="#">FAQ</a></li>
+              <li><a class="hover:underline" href="#">Terms of use</a></li>
+              <li><a class="hover:underline" href="#">Privacy policy</a></li>
+              <li><a class="hover:underline" href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <span class="clr-neutral-800 block mb-9 uppercase font-bold"
+              >Contact</span
+            >
+            <ul>
+              <li><a class="hover:underline" href="#">Sales</a></li>
+              <li><a class="hover:underline" href="#">Support</a></li>
+              <li><a class="hover:underline" href="#">Live chat</a></li>
+            </ul>
+          </div>
+          <div class="mb-8">
+            <span class="clr-neutral-800 block mb-9 uppercase font-bold"
+              >Others</span
+            >
+            <ul>
+              <li><a class="hover:underline" href="#">Careers</a></li>
+              <li><a class="hover:underline" href="#">Press</a></li>
+              <li><a class="hover:underline" href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://douoo.github.io/frontendmentor_challenges/">Douoo</a>.
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
