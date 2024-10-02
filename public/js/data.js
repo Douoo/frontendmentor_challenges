@@ -1,15 +1,34 @@
 export const info = {
   twitter: "https://twitter.com/douoo_b",
   fem: "https://github.com/douoo/frontendmentor_challenges/tree/main/",
+  linkedin: "https://www.linkedin.com/in/brooksewb",
 };
 
 export const challenges = [
+  {
+    name: "audiophile",
+    title: "Audiophile e-commerce website (NextJS)",
+    level: "Expert",
+    internalhost: false,
+    id: 0,
+    url: "https://audiophile-sigma-one.vercel.app/",
+    repo: "https://github.com/Douoo/audiophile",
+  },
   {
     name: "art-gallery-website",
     title: "Art Gallery Website Landing Page",
     level: "Junior",
     internalhost: true,
     id: 1,
+  },
+  {
+    name: "insure-lp",
+    title: "Insure landing page<br> (Tailwind-CSS)",
+    level: "Junior",
+    id: 100,
+    internalhost: false,
+    url: "https://audiophile-sigma-one.vercel.app/",
+    repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/insure-lp",
   },
   {
     name: "typemaster-lp",
@@ -27,19 +46,37 @@ export const challenges = [
     url: "https://gituser-omega.vercel.app/",
     repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/github-user-search-app",
   },
+
+  {
+    name: "officelite",
+    title: "Officelite coming soon site",
+    level: "Junior",
+    internalhost: true,
+    id: 101,
+  },
+  {
+    name: "social-media-dashboard",
+    title: "Social media dashboard with theme switcher (NextJS)",
+    level: "Junior",
+    id: 102,
+    internalhost: false,
+    id: 17,
+    url: "https://social-media-dashboard-one-lilac.vercel.app/",
+    repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/social-media-dashboard",
+  },
   {
     name: "bmi-calculator",
     title: "BMI calculator",
     level: "Junior",
     internalhost: true,
-    id: 1,
+    id: 102,
   },
   {
     name: "workit-landing-page",
     title: "Workit landing page",
     level: "Newbie",
     internalhost: true,
-    id: 1,
+    id: 103,
   },
   {
     name: "equalizer-landing-page",

@@ -221,6 +221,7 @@ function App() {
             </ul>
           </section>
         </main>
+        <hr />
       </>
     </>
   );
