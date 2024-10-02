@@ -27,7 +27,7 @@ export const challenges = [
     level: "Junior",
     id: 100,
     internalhost: false,
-    url: "https://audiophile-sigma-one.vercel.app/",
+    url: "https://insure-lp.onrender.com/",
     repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/insure-lp",
   },
   {

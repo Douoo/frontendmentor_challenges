@@ -1220,11 +1220,6 @@ h4 {
     place-items: start;
   }
 
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
