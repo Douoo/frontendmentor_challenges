@@ -31,6 +31,13 @@ export const challenges = [
     repo: "https://github.com/Douoo/frontendmentor_challenges/tree/main/insure-lp",
   },
   {
+    name: "loopstudios-lp",
+    title: "Loopstudios landing page",
+    level: "Junior",
+    id: 105,
+    internalhost: true,
+  },
+  {
     name: "typemaster-lp",
     title: "Typemaster Landing Page",
     level: "Junior",
