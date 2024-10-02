@@ -1,0 +1,3 @@
+[submodule "audiophile"]
+	path = audiophile
+	url = https://github.com/Douoo/audiophile.git
